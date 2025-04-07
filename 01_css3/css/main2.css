@@ -1,0 +1,23 @@
+@charset "uft-8"
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+div{
+    border: 1px solid #000;
+    width: 730px;
+}
+h2{
+    color: blue;
+}
+span{
+    color: red;
+}
+.h22{
+    color: #000;
+}
+h1, h2{
+    padding-left: 10px;
+}
+p{
+    padding-left: 30px;
+}
