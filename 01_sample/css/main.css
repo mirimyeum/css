@@ -1,0 +1,64 @@
+@charset "utf-8"
+
+body {
+    font-family: "맑은 고딕", "malun gothic", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 380px;
+    padding: 10px;
+    border: 2px solid #0e24c5;
+    margin: 26px;
+}
+
+div h1 {
+    font-size: 16px;
+    font-family: "돋움체";
+    margin-bottom: 18px;
+}
+
+div .p1 {
+    color: #a8a8a8;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+div p .span1 {
+    font-size: 14px;
+    font-family: "돋움체";
+    color: #e0712c;
+    font-weight: 900;
+}
+
+div p .span2 {
+    font-size: 14px;
+    font-family: "돋움체";
+    color: #75a4d0;
+    font-weight: 900;
+}
+
+div .p2{
+    margin-bottom: 27px;
+}
+div p {
+    margin-bottom: 9px;
+    text-align: justify;
+    font-size: 12px;
+    font-family: "돋움체";
+    color: #333;
+    line-height: 18px 
+}
+
+div p .span3 {
+    color: #fff;
+    background: #936fdb;
+    border: 1px solid #534370;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin-bottom: 0;
+}
