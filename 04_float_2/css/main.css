@@ -1,0 +1,44 @@
+@charset "utf-8"
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+/* 여백 초기화 */
+*{margin: 0;padding: 0;}
+
+.wrap{
+    width: 900px;
+    margin: auto;
+}
+.box{
+    width: 900px;
+    height: 300px;
+    background-color: aqua;
+}
+.box .box1{
+    width: 300px;
+    height: 300px;
+    background: #1ddb17;
+    float: left;
+}
+.box .box2{
+    width: 300px;
+    height: 300px;
+    background: #00d8ff;
+    float: left;
+}
+.box .box3{
+    width: 300px;
+    height: 300px;
+    background: #ffbb00;
+    float: right;
+}
+.boxb{
+    width: 900px;
+    height: 300px;
+    background: #ffff00;
+}
+.boxc{
+    width: 900px;
+    height: 50px;
+    background: #eeeeee;
+}
