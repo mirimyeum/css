@@ -1,6 +1,70 @@
 @charset "utf-8";
 body{
     font-family: "맑은 고딕", "malgun gothic", sans-serif;
+    background: #ccc;
 }
 *{margin: 0;padding: 0;}
 
+.box{
+    width: 477px;
+
+    margin: auto;
+    padding: 16px;
+    background: #ffffff;
+}
+.box .box1{
+    width: 445px;
+    height: 179px;
+    background: #ffdfdf;
+    font-size: 24px;
+    font-weight: 900;
+    color: #777e85;
+    text-align: center;
+    line-height: 179px;
+    border-radius: 12px;
+    margin: auto;
+    margin-bottom: 16px;
+}
+.box .box2{
+    width: 445px;
+    height: 269px;
+    margin: auto;
+    margin-bottom: 16px;
+}
+.box .leftbox{
+    width: 132px;
+    height: 269px;
+    background: #ffe1c3;
+    font-size: 24px;
+    font-weight: 900;
+    color: #777e85;
+    text-align: center;
+    line-height: 269px;
+    border-radius: 12px;
+    float: left;
+    margin-right: 10px;
+}
+.box .rightbox{
+    width: 303px;
+    height: 269px;
+    background: #d9f8ff;
+    font-size: 24px;
+    font-weight: 900;
+    color: #777e85;
+    text-align: center;
+    line-height: 269px;
+    border-radius: 12px;
+    float: left;
+}
+.box .box3{
+    width: 445px;
+    height: 59px;
+    background: #e1f7de;
+    font-size: 24px;
+    font-weight: 900;
+    color: #777e85;
+    text-align: center;
+    line-height: 59px;
+    border-radius: 12px;
+    margin: auto;
+}
