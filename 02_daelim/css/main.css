@@ -1,0 +1,73 @@
+@charset "utf-8"
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    width: 1871px;
+    height: 70px;
+    margin: auto;
+}
+
+.header .inner{
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+}
+
+.header .inner h1{
+    float: left;
+    margin: 10.5px 69px 10.5px 0;
+}
+
+.header .inner .gnb{
+    float: left;
+}
+
+.header .inner .gnb li{
+    float: left;
+    margin-right: 64px;
+}
+
+.header .inner .gnb .last{
+    margin-right: 0px;
+}
+
+.header .inner .gnb li a{
+    text-align: center;
+    line-height: 70px;
+    color: #4f4f4f;
+    font-weight: 700;
+}
+
+.header .inner .icon{
+    float: right;
+}
+
+.header .inner .icon li{
+    float: left;
+    margin-left: 23px;
+}
+
+.header .inner .icon .first{
+    margin-left: 0px;
+}
+
+.header .inner .icon li a{
+    line-height: 70px;
+}
