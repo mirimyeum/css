@@ -1,0 +1,59 @@
+@charset "utf-8"
+
+body {
+    /* font-family: "맑은 고딕", "malgun gothic", sans-serif; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 배경 이미지로 삽입(여러개의 이미지를) */
+div {
+    /* 배경이미지 삽입을 위해 박스의 크기가 반드시 설정 */
+    width: 1000px;
+    height: 3000px;
+    background: gold;
+    margin: auto;
+    /* 해당요소에 배경이미지로 반복 삽입해서 채울때 */
+    /* background-image: url("../images/icon.png"); */
+    /* 해당요소에 배경이미지를 가로로 반복삽입해서 채울때 */
+    /* background-repeat: repeat-x; */
+    /* 해당요소에 배경이미지를 세로로 반복삽입해서 채울때 */
+    /* background-repeat: repeat-y; */
+    /* 해당요소에 배경이미지를 반복하지 않고 하나만 채울때 */
+    /* background-repeat: no-repeat; */
+
+
+     /* 배경이미지 삽입할때 short css  */
+     /* background: gold url(../images/icon.png) repeat-x; */
+     /* 배경이미지 위치 */
+     /* background-image: url(../images/icon.png); */
+     /* background-repeat: no-repeat; */
+     /* 배경이미지 배치 */
+     /* background-position: center top;
+     background-position: center center;
+     background-position: center bottom;
+     background-position: right top;
+     background-position: left center;
+     /* 배경이미지 배치2 */
+     /* background-position: 50% 50%;
+     background-position: 50% center;
+     background-position: 90% top;
+     background-position: center 100%; */
+     /* 배경이미지 배치3 */
+     /* background-position: 50px 100px;
+     background-position: center 300px; */ 
+     /* 배경이미지 배치 short hand방식 */
+     /* background: gold url(../images/car.png) no-repeat 100% bottom;
+     background: gold url(../images/icon.png) no-repeat 50% center; */
+
+     /* 배경이미지를 스크롤바에 의해서 스크롤 */
+     /* 배경이미지를 스크롤바를 움직여도 배경이미지를 고정 */
+     background-image: url(../images/icon.png);
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+
+     /* background: url(../images/icon.png) no-repeat fixed; */
+}
