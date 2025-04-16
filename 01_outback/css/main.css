@@ -69,3 +69,10 @@ a{
     background: #23221d;
     padding: 10px 20px;
 }
+
+
+.visual{
+    width: 100%;
+    height: 900px;
+    background: url(../images/visual.png) no-repeat center top;
+}

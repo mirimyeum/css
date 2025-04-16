@@ -72,3 +72,9 @@ a{
 .header .inner .icon li a{
     line-height: 70px;
 }
+
+.visual{
+    width: 100%;
+    height: 920px;
+    background: url(../images/visual.jpg) no-repeat center top;
+}
