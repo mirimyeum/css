@@ -1,0 +1,99 @@
+@charset "utf-8"
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.section{
+    width: 100%;
+    height: 600px;
+    background: url(../images/41b6164f-6543-45bc-8fb1-0bd7440014f2.jpeg) no-repeat center top;
+}
+
+.section .inner{
+    width: 1270px;
+   height: 600px;
+   margin: auto;
+   padding: 50px 0;
+   box-sizing: border-box;
+}
+
+.section .inner .title{
+    margin-left: 100px;
+}
+
+.section .inner h2{
+    font-size: 36px;
+    color: #000000;
+    font-weight: 900;
+}
+
+.section .inner p{
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #404040;
+}
+
+.section .inner ul{
+    width: 1270px;
+    height: 270px;
+    margin-top: 70px;
+}
+
+.section .inner ul li{
+    width: 230px;
+    height: 270px;
+    background: #ffffff;
+    margin-right: 30px;
+    float: left;
+    text-align: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+
+}
+
+.section .inner ul li h3{
+    margin-top: 93px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+}
+
+.section .inner ul .last{
+    margin-right: 0;
+}
+
+.section .inner ul li p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    margin-top: 20px;
+}
+.section .inner ul .first{
+    background: #ffffff url(../images/f0101734-85a4-47fc-99e9-f4298f265746.png) no-repeat center 40px;
+}
+.section .inner ul .li2{
+    background: #ffffff url(../images/e4f00886-c70f-4d32-9fe4-20aac9297ed3.png) no-repeat center 40px;
+}
+.section .inner ul .li3{
+    background: #ffffff url(../images/car.png) no-repeat center 40px;
+}
+.section .inner ul .li4{
+    background: #ffffff url(../images/8d8bbc3e-cf50-472c-9d2f-42fc571de92a.png) no-repeat center 40px;
+}
+.section .inner ul .last{
+    background: #ffffff url(../images/d125b077-56d1-473e-9f90-13bdd85566c9.png) no-repeat center 40px;
+}
