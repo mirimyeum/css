@@ -78,3 +78,7 @@ a{
     height: 920px;
     background: url(../images/visual.jpg) no-repeat center top;
 }
+
+.header .inner .gnb a:hover{
+    color: #0F2741;
+}
