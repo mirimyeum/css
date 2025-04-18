@@ -96,3 +96,7 @@ a {
     height: 652px;
     background: url(../images/visual.jpg) no-repeat center top;
 }
+
+.header .inner .gnb a:hover{
+    color: #783345;
+}
