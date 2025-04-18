@@ -1,0 +1,164 @@
+@charset "utf-8"
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+/* 버튼 초기화 */
+button{
+    border: none;
+    background: none;
+    /* 하이퍼링크 설정(손모양) */
+    cursor: pointer;
+}
+
+
+
+.header {
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 50px;
+}
+
+.header ul {
+    width: 590px;
+    height: 90px;
+    margin: auto;
+
+}
+
+.header ul li {
+    float: left;
+    margin-right: 80px;
+    line-height: 90px;
+}
+
+.header ul .last {
+    margin: 0;
+}
+
+.header ul a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* 주메뉴에 마우스가 영역안에 있을때 글자색 바꾸기 */
+.header ul li:hover a {
+    color: #1275d2;
+}
+
+
+/* 버튼 디자인 */
+.box{
+    width: 800px;
+   margin: auto;
+   margin-bottom: 50px;
+}
+.box .btn1{
+   width: 234px;
+   height: 73px;
+   border: 1px solid #dfdfdf;
+   border-radius: 12px;
+   font-size: 20px;
+}
+.btn1:hover{
+    background: #000;
+    color: #fff;
+}
+
+.box .btn2{
+    width: 112px;
+    height: 40px;
+    border-bottom: 1px solid #222;
+    text-align: left;
+    background: url(../images/ico_plus.png) no-repeat right center;
+}
+
+.box .btn3{
+    width: 240px;
+    height: 38px;
+    border: 1px solid #c7c7c7;
+    text-align: left;
+    /* 글자 안쪽으로 들여쓰기 */
+    text-indent: 20px;
+    background: url(../images/ico_sel_arr.gif) no-repeat 217px center;
+}
+.btn3:hover{
+    border: 1px solid #333;
+}
+
+.box .btn4{
+    width: 121px;
+    height: 40px;
+    border-radius: 999px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+.btn4:hover{
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+
+.box .btn5{
+    width: 179px;
+    height: 56px;
+    background: #215bfa;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 17px;
+}
+.btn5:hover{
+    color: #fff;
+    background: #0d42cc;
+}
+
+
+.family{
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 50px;
+    background: #1b1b1b;
+    margin-left: 360px;
+}
+.family .btn6{
+    width: 180px;
+    height: 47px;
+    background: #1a1a1a;
+    color: #fff;
+    text-align: left;
+    border-radius: 999px;
+    text-indent: 17px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    background: url(../images/icon_arrow_top_16x16_w.svg) no-repeat 151px center;
+}
+.btn6:hover{
+    color: #fff;
+    background-color: #303030;
+}
