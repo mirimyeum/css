@@ -1,0 +1,90 @@
+@charset "utf-8"
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+ul{
+    width: 791px;
+    margin: auto;
+    /* 자식이 모두 float이 되면, 부모 높이는 0이 된다. */
+    overflow: hidden;
+}
+
+ul li{
+    float: left;
+    width: 191px;
+    height: 62px;
+    margin-right: 9px;
+    border: 2px solid #666;
+    /* padding 또는 border 줄때, 크기 영역의 영향을 안줄때 */
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+ul .li4, ul .last{
+    margin-right: 0;
+}
+ul .first, ul .li2, ul .li3, ul .li4{
+    margin-bottom: 9px;
+}
+ul li a{
+    width: 100%;
+    height: 100%;
+    /* 박스 전체의 링크가 걸릴 수 있게 */
+    display: block;
+    text-align: right;
+    /* 글자간의 간격 줄이고 늘릴때 */
+    letter-spacing: -1px;
+}
+
+ul li a p{
+    font-size: 13px;
+    color: #595959;
+}
+ul li a h4{
+    font-size: 13px;
+    color: #000;
+    font-weight: 500;
+}
+
+ul .first{
+    background: url(../images/bg_banner_new.png) no-repeat 10px 12px;
+}
+
+ul .li2{
+    background: url(../images/bg_banner_new.png) no-repeat 10px 12px;
+    background-position-y: -53px;
+}
+
+ul .li3{
+    background: url(../images/bg_banner_new.png) no-repeat 10px 12px;
+    background-position-y: -118px;
+}
+
+ul .li4{
+    background: url(../images/bg_banner_new.png) no-repeat 10px 12px;
+    background-position-y: -185px;
+}
+
+ul .li5{
+    background: url(../images/bg_banner_new.png) no-repeat 10px 12px;
+    background-position-y: -247px;
+}
+
+ul .li6{
+    background: url(../images/bg_banner_new.png) no-repeat 10px 12px;
+    background-position-y: -311px;
+}
+
+ul .li7{
+    background: url(../images/bg_banner_new.png) no-repeat 10px 12px;
+    background-position-y: -372px;
+}
+
+ul .last{
+    background: url(../images/bg_banner_new.png) no-repeat 10px 12px;
+    background-position-y: -436px;
+}
