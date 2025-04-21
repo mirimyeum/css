@@ -1,0 +1,72 @@
+@charset "utf-8"
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+*{margin: 0; padding: 0;}
+li{
+    list-style: none;
+}
+a{text-decoration: none;}
+
+ul{
+    width: 760px;
+    margin: auto;
+    margin-top: 25px;
+    background: gold;
+}
+ul li{
+    width: 225px;
+    /* height: 62px; */
+    border: 1px solid #d9d9d9;
+    float: left;
+    padding-top: 21px;
+    padding-bottom: 13px;
+    padding-right: 18px;
+    margin-right: 11px;
+}
+ul .first, ul .li2, ul .li3{
+    margin-bottom: 11px;
+}
+ul .li3, ul .last{
+    margin-right: 0;
+}
+ul li a p{
+    text-align: right;
+    font-size: 12px;
+    color: #67646b;
+    font-weight: 600;
+}
+ul li a h4{
+    text-align: right;
+    font-size: 15px;
+    color: #7778b0;
+}
+ul li a{
+    line-height: 20px;
+}
+
+
+ul .first{
+    background: url(../images/bg_reason.gif) no-repeat 10px 15px;
+    background-position-y: 10px;
+}
+ul .li2{
+    background: url(../images/bg_reason.gif) no-repeat 10px 15px;
+    background-position-y: -46px;
+}
+ul .li3{
+    background: url(../images/bg_reason.gif) no-repeat 10px 15px;
+    background-position-y: -102px;
+}
+ul .li4{
+    background: url(../images/bg_reason.gif) no-repeat 10px 15px;
+    background-position-y: -158px;
+}
+ul .li5{
+    background: url(../images/bg_reason.gif) no-repeat 10px 15px;
+    background-position-y: -209px;
+}
+ul .last{
+    background: url(../images/bg_reason.gif) no-repeat 10px 15px;
+    background-position-y: -264px;
+}
