@@ -1,0 +1,63 @@
+@charset "utf";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+/* *{margin: 0; padding: 0;} */
+
+#p1{
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+#p2{
+    border-bottom: 1px solid red;
+    padding: 20px;
+}
+
+#p3{
+    border: 1px solid #7f7f7f;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+#p4{
+    background: #e0ffff;
+    padding: 20px;
+    border-left: 5px solid #0001fd;
+    border-top: 2px dotted #000;
+    border-bottom: 2px double red;
+    border-right: 5px dashed green;
+}
+
+#p5{
+    border-top: 3px solid #000;
+    padding: 20px;
+    border-bottom: 3px dashed #000;
+    border-right: 3px dotted #000;
+    border-left: 3px double #000;
+}
+
+#p6{
+    border: 1px solid #000;
+    border-left: 5px solid red;
+    padding: 20px;
+}
+
+#p7{
+    background: #7effd4;
+    border-radius: 32px 32px 0 0;
+    padding: 20px;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    /* 초과된 부분을 안보이게 하고 부모사이즈로 클리핑 마스크 되는 기능 */
+    overflow: hidden;
+}
+div img{
+    width: 100%;
+    height: 100%;
+
+}
