@@ -1,0 +1,150 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+*{margin: 0;padding: 0;}
+div{
+    width: 1015px;
+    height: 952px;
+    margin: auto;
+    background: skyblue;
+}
+
+div .box1{
+    width: 200px;
+    height: 200px;
+    background: purple;
+    position: absolute;
+    left: 200;
+    top: 0;
+    z-index: 1;
+}
+div .box2{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    margin-left: -30px;
+    z-index: 2;
+}
+div .box3{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    margin-left: -110px;
+    margin-top: -13px;
+    z-index: 3;
+}
+div .box4{
+    width: 200px;
+    height: 200px;
+    background:black;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -100px;
+}
+
+
+div .box5{
+    width: 200px;
+    height: 200px;
+    background: purple;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 452px;
+    z-index: 1;
+}
+div .box6{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    position: absolute;
+    right: 30%;
+    top: 10%;
+    margin-right: -30px;
+    z-index: 2;
+}
+div .box7{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    right: 40%;
+    top: 20%;
+    margin-right: -110px;
+    margin-top: -13px;
+    z-index: 3;
+}
+
+
+div .box8{
+    width: 200px;
+    height: 200px;
+    background: purple;
+    position: absolute;
+    left: 200;
+    bottom: 0;
+    z-index: 1;
+}
+div .box9{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    position: absolute;
+    left: 30%;
+    bottom: 10%;
+    margin-left: -30px;
+    z-index: 2;
+}
+div .box10{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    left: 40%;
+    bottom: 20%;
+    margin-left: -110px;
+    margin-bottom: -13px;
+    z-index: 3;
+}
+
+
+div .box11{
+    width: 200px;
+    height: 200px;
+    background: purple;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 452px;
+    z-index: 1;
+}
+div .box12{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+    margin-right: -30px;
+    z-index: 2;
+}
+div .box13{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    right: 40%;
+    bottom: 20%;
+    margin-right: -110px;
+    margin-bottom: -13px;
+    z-index: 3;
+}
