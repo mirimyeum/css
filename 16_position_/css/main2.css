@@ -1,0 +1,141 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+*{margin: 0;padding: 0;}
+div{
+    width: 1000px;
+    height: 1000px;
+    /* width: 1015px;
+    height: 952px; */
+    margin: auto;
+    background: skyblue;
+    position: relative;
+}
+
+div .box1{
+    width: 200px;
+    height: 200px;
+    background: purple;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+div .box2{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    z-index: 2;
+}
+div .box3{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    
+    z-index: 3;
+}
+div .box4{
+    width: 200px;
+    height: 200px;
+    background:black;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -100px;
+}
+
+
+div .box5{
+    width: 200px;
+    height: 200px;
+    background: purple;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    z-index: 1;
+}
+div .box6{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    z-index: 2;
+}
+div .box7{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    z-index: 3;
+}
+
+
+div .box8{
+    width: 200px;
+    height: 200px;
+    background: purple;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+div .box9{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    z-index: 2;
+}
+div .box10{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+    z-index: 3;
+}
+
+
+div .box11{
+    width: 200px;
+    height: 200px;
+    background: purple;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+div .box12{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    z-index: 2;
+}
+div .box13{
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    right: 20%;
+    bottom: 20%;
+    z-index: 3;
+}
