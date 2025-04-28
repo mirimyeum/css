@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+body{
+    font-family: "Nanum Gothic", sans-serif;
+}
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+button{background: none; border: none; cursor: pointer;}
+
+.header{
+    width: 100%;
+    height: 51px;
+    border-bottom: 1px solid #e1e1e1;
+
+}
+.header h1{
+    width: 451px;
+    height: 51px;
+    position: relative;
+}
+.header h1 a{
+    width: 145px;
+    height: 45px;
+    background: url(../images/logo_mo.jpg) no-repeat;
+    background-size: 145px 45px;
+    text-indent: -99999px; 
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -22.5px;
+    left: 50%;
+    margin-left: -52.5px;
+}
+
+.header .m_menu{
+    width: 44px;
+    height: 48.5px;
+    text-indent: -99999px;
+    background: url(../images/btn_memu.jpg) no-repeat;
+    background-size: 44px 48.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header .m_search{
+    width: 44px;
+    height: 48.5px;
+    text-indent: -99999px;
+    background: url(../images/icon_search_mo.jpg) no-repeat;
+    background-size: 44px 48.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main .visual{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.main .visual img{
+    width: 100%;
+}
