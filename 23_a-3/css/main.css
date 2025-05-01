@@ -1,0 +1,111 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgun gothic", sans-serif;
+}
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+
+.wrap{
+    width: 1200px;
+    height: 700px;
+    margin: auto;
+    background: skyblue;
+}
+
+.wrap .header{
+    width: 100%;
+    height: 100px;
+    background: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap .header h1{
+    width: 200px;
+    height: 100px;
+    background: burlywood;
+    text-align: center;
+    line-height: 100px;
+}
+
+.wrap .header ul{
+    width: 600px;
+    height: 100px;
+    background: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.wrap .slide{
+    width: 100%;
+    height: 300px;
+    background: chartreuse;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 300px;
+} 
+
+.wrap .contents{
+    width: 100%;
+    height: 200px;
+    background: darkcyan;
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 200px;
+}
+
+.wrap .contents .border{
+    width: 400px;
+    height: 200px;
+    background: darkkhaki;
+}
+
+.wrap .contents .banner{
+    width: 400px;
+    height: 200px;
+    background: fuchsia;
+}
+
+.wrap .contents .go{
+    width: 400px;
+    height: 200px;
+    background: gray;
+}
+
+.wrap .footer{
+    width: 100%;
+    height: 100px;
+    background: hotpink;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    display: flex;
+}
+
+.wrap .footer .logo{
+    width: 200px;
+    height: 100px;
+    background: indianred;
+    line-height: 100px;
+}
+
+.wrap .footer .menu{
+    width: 1000px;
+    height: 50px;
+    background: orange;
+    line-height: 50px;
+    
+}
+.wrap .footer .copy{
+    width: 1000px;
+    height: 50px;
+    background: palegoldenrod;
+    line-height: 50px;
+    
+}
