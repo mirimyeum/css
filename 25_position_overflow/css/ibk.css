@@ -1,0 +1,172 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Arial", "Noto sans", sans-serif;
+}
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+button{border: none;background: none;cursor: pointer;}
+
+.header{
+    width: 100%;
+    height: 72px;
+    margin: auto;
+    background: #fff;
+}
+.header .inner{
+    width: 1000px;
+    height: 72px;
+    margin: auto;
+    /* background: pink; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.line{
+    width: 100%;
+    height: 4px;
+    background: url(../images/bg_gnb.gif) no-repeat;
+
+}
+.main{
+    width: 100%;
+    height: 2200px;
+    background: #fff;
+    /* background: skyblue; */
+}
+.footer{
+    width: 100%;
+    height: 119px;
+    background: #f8f8f8;
+    border-top: 1px solid #dadedd;
+}
+.footer .inner{
+    /* background: gold; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer .inner .wrap ul{
+    display: flex;
+    width: 610px;
+    /* background: pink; */
+    gap: 10px;
+    flex-wrap: wrap;
+}
+/* li사이마다 경계선 삽입하는 명령 */
+.footer .inner .wrap ul li{
+    position: relative;
+}
+.footer .inner .wrap ul li::after{
+    /* 글자가 아닐때 */
+    content: "";
+    /* 경계선 크기 */
+    width: 1px;
+    height: 10px;
+    background: #b7b6b4;
+    /* 영계선은 반드시 공중에 띄워서 배치해야함 */
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.footer .inner .wrap ul li a{
+    font-size: 12px;
+    color: #5e5157;
+    letter-spacing: -1px;
+}
+.footer .inner .wrap ul li:first-child a,
+.footer .inner .wrap ul li:nth-child(2) a,
+.footer .inner .wrap ul li:nth-child(3) a,
+.footer .inner .wrap ul li:nth-child(8) a,
+.footer .inner .wrap ul li:last-child a{
+    font-weight: 500;
+    color: #264d78;
+}
+.footer .inner .wrap p{
+    font-size: 12px;
+    color: #5e5157;
+    margin-top: 13px;
+}
+
+.footer .inner .group{
+    display: flex;
+    gap: 6px;
+}
+.footer .inner .group button{
+    width: 140px;
+    height: 25px;
+    background: #fff;
+    border: 1px solid #c6c7c9;
+    font-size: 13px;
+    color: #707070;
+    text-align: left;
+    /* 들여쓰기+, 내려쓰기-*/
+    text-indent: 8px;
+    background: url(../images/ico_sel_arr.gif) no-repeat 90% center;
+}
+.footer .inner .group .family2 ul{
+    width: 140px;
+    border: 1px solid #c6c7c9;
+    box-sizing: border-box;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    text-indent: 10px;
+    /* 화면상에서 해당요소를 숨김처리 */
+    display: none;
+    height: 100px;
+    overflow-y: auto;
+}
+.footer .inner .group .family2 {
+    position: relative;
+}
+.footer .inner .group .family2 ul li a{
+    font-size: 13px;
+    color: #5e5157;
+}
+.footer .inner .group .family2 ul li a:hover{
+    color: #333;
+    font-weight: 700;
+}
+.footer .inner .group .family2:hover ul{
+    display: block;
+}
+
+
+.footer .inner .group .family1{
+    position: relative;
+}
+.footer .inner .group .family1 ul{
+    width: 140px;
+    border: 1px solid #c6c7c9;
+    box-sizing: border-box;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    text-indent: 10px;
+    /* 화면상에서 해당요소를 숨김처리 */
+    display: none;
+    height: 100px;
+    overflow-y: auto;
+}
+.footer .inner .group .family1 ul li a{
+    font-size: 13px;
+    color: #5e5157;
+}
+.footer .inner .group .family1 ul li a:hover{
+    color: #333;
+    font-weight: 700;
+}
+.footer .inner .group .family1:hover ul{
+    display: block;
+}

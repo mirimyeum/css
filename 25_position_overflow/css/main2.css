@@ -1,0 +1,47 @@
+@charset "utf-8";
+body{
+
+}
+*{margin: 0;padding: 0;}
+
+.box{
+    width: 500px;
+    height: 250px;
+    border: 10px solid #345e2c;
+    background: #fff910;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -125px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.box .red{
+    width: 200px;
+    height: 400px;
+    background: #ff6766;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.box .green{
+    width: 200px;
+    height: 400px;
+    background: #9afe66;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.box .blue{
+    width: 200px;
+    height: 400px;
+    background: #0066cb;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+}
+
