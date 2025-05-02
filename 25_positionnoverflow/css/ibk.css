@@ -59,6 +59,23 @@ button{border: none;background: none;cursor: pointer;}
     gap: 10px;
     flex-wrap: wrap;
 }
+/* li사이마다 경계선 삽입하는 명령 */
+.footer .inner .wrap ul li{
+    position: relative;
+}
+.footer .inner .wrap ul li::after{
+    /* 글자가 아닐때 */
+    content: "";
+    /* 경계선 크기 */
+    width: 1px;
+    height: 10px;
+    background: #b7b6b4;
+    /* 영계선은 반드시 공중에 띄워서 배치해야함 */
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    margin-top: -5px;
+}
 
 .footer .inner .wrap ul li a{
     font-size: 12px;
@@ -72,9 +89,7 @@ button{border: none;background: none;cursor: pointer;}
 .footer .inner .wrap ul li:last-child a{
     font-weight: 500;
     color: #264d78;
-
 }
-
 .footer .inner .wrap p{
     font-size: 12px;
     color: #5e5157;
