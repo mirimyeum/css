@@ -1,0 +1,410 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+/* 헤더바 */
+.header {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d4d4d4;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 img {
+    width: 150px;
+    height: 40px;
+}
+
+.header .menu  img {
+    width: 22px;
+    height: 20px;
+}
+
+.header .search  img {
+    width: 21.5px;
+    height: 21px;
+}
+
+/* 메뉴바 */
+.menu {
+    border-bottom: 1px solid #d4d4d4;
+    background: #ffffff;
+}
+
+.menu ul {
+    width: 100%;
+    padding: 20px 60px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li a {
+    font-size: 15px;
+    color: #344a56;
+    font-weight: 400;
+}
+
+.menu ul li a:hover {
+    color: #ed174d;
+    font-weight: 500;
+}
+
+/* 메인컨텐츠 */
+.main {
+    width: 100%;
+}
+
+/* 메인이미지 */
+.main .visual {
+    width: 100%;
+}
+
+.main .visual img {
+    width: 100%;
+}
+
+/* 버튼바 */
+.button {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.button ul {
+    width: 100%;
+    display: flex;
+}
+
+.button ul .click1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 55px;
+    background: #ed174d;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.button ul .click2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 55px;
+    background: #e0e0e0;
+    color: #ed174d;
+    font-size: 16px;
+}
+
+.button ul .click2 a img {
+    width: 24px;
+    height: 24px;
+}
+
+/* 섹션1 */
+.section1 {
+    width: 100%;
+    background: #ffffff;
+}
+
+.section1 h2 {
+    text-align: center;
+    font-size: 21px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+.section1 .tech {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 46px 85px 65px 85px;
+    box-sizing: border-box;
+}
+
+.section1 .tech li a img {
+    width: 45px;
+    height: 45px;
+    margin: auto;
+}
+
+.section1 .tech li a h3 {
+    text-align: center;
+    color: #17150e;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 19px;
+}
+
+/* 섹션2 */
+.section2 {
+    width: 100%;
+    background: #f2f3f7;
+}
+
+.section2 h2 {
+    text-align: center;
+    padding-top: 58px;
+    font-size: 23px;
+    color: #0d0d0d;
+    font-weight: 600;
+}
+
+.section2 p {
+    text-align: center;
+    padding: 26px 0 46px 0;
+    font-size: 15px;
+    color: #09090d;
+    font-weight: 500;
+}
+
+.section2 a img {
+    width: 296px;
+    height: 296px;
+    margin: auto;
+    padding-bottom: 72px;
+}
+
+/* 주소검색바 */
+.address {
+    width: 100%;
+    background: #ed174d;
+    padding-top: 63px;
+
+}
+
+.address h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    padding-bottom: 27px;
+}
+
+.label button a img {
+    width: 24px;
+    height: 24px;
+    margin-left: -30px;
+
+}
+
+.label {
+    width: 100%;
+    background: #ed174d;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.label input {
+    width: 300px;
+    height: 48px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #ffffff;
+}
+
+.label input::placeholder {
+    color: #ffffff;
+}
+
+/* 정보바 */
+.info {
+    width: 100%;
+
+}
+
+.info .center ul {
+    background: #000;
+    border-bottom: 1px solid #626262;
+    display: flex;
+    padding: 28px 15px;
+    gap: 26px;
+}
+
+
+.info .center ul li h3 {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+
+
+}
+
+.info .center ul li a {
+    color: #a8aab6;
+    font-size: 14px;
+    font-weight: 500;
+
+
+}
+
+/* 구분선 */
+.main .info .center ul li::after {
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #a2a4a3;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -36.5px;
+}
+
+.info .announce ul {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 15px;
+    gap: 15px;
+}
+
+.info .announce ul li {
+    color: #ffffff;
+    font-size: 14px;
+
+}
+
+.info .announce ul li a {
+    color: #a8aab6;
+    font-size: 14px;
+
+}
+
+.info .announce ul li p {
+    color: #a8aab6;
+    font-size: 14px;
+}
+
+.menu2 {
+    width: 100%;
+    background: #1e1f21;
+    border-bottom: #626262;
+
+}
+
+.menu2 ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 76px;
+    border-bottom: #333436;
+}
+
+.menu2 ul li a h3 {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* 푸터 */
+.footer {
+    width: 100%;
+    background: #1e1f21;
+}
+
+.footer h1 a img {
+    width: 120px;
+    height: 35px;
+    margin: auto;
+    padding-bottom: 37px;
+}
+
+.footer .txt1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.footer .txt1 ul li {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 10px;
+}
+
+.footer .txt1 ul li a {
+    color: #6ca0f0;
+}
+
+.footer .txt2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .txt2 ul li {
+    color: #868f9b;
+    font-size: 12px;
+    padding-bottom: 10px;
+
+}
+
+.footer .txt3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.footer .txt3 ul li {
+    color: #919495;
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.footer .copy {
+    width: 100%;
+    color: #868f9b;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 32px;
+}
