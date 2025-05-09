@@ -1,0 +1,26 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+
+*{margin: 0; padding: 0;}
+
+div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    /* 중간과정 만들어서 부드럽게 처리한다는 명령 */
+    transition: all 5s;
+    /* cross 브라우징 -> 어떤 브라우저에서도 코딩명령이 똑같이 동작되는 것*/
+    /* 선택영역 중간과정 실행시간 지연시간 가속도시간 */
+    -webkit-transition: all 3s 2s linear;
+    -o-transition: all 3s;
+}
+
+div:hover{
+    width: 1000px;
+    height: 800px;
+}

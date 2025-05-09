@@ -1,0 +1,50 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+    background: #333;
+}
+
+*{margin: 0; padding: 0;}
+
+div{
+    width: 658px;
+    height: 507px;
+    border: 10px solid #fff;
+    margin: 125px auto 0;
+    position: relative;
+      overflow: hidden;
+}
+
+div p{
+    width: 100%;
+    height: 150px;
+    /* 투병도값과 색을 같이 줄때 */
+    background: rgba(255, 255, 255, 0.2);
+    /* opacity: 0.2; */
+    font-size: 50px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    line-height: 150px;
+    position: absolute;
+    /* 왼쪽에서 날라오기 */
+    /* left: -100%; */
+    /* 오른쪽에서 날라오기 */
+    /* right: -100%; */
+    /* 위에서 내려오기 */
+    /* top: 0; */
+    /* 아래에서 올라오기 */
+    bottom: -100%;
+    
+    margin-top: -75px;
+    /* margin-left: -329px; */
+    transition: all 0.5s ease-in-out;
+  
+}
+
+div:hover p{
+    /* left: 0 */
+    /* right: 0; */
+    /* top: 0; */
+    bottom: 0;
+}
