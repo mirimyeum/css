@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.section {
+    width: 100%;
+}
+
+.section .inner {
+    width: 1175px;
+    /* background: pink; */
+    margin: auto;
+}
+
+.section .inner ul.product {
+    width: 100%;
+    display: flex;
+    gap: 45px;
+    /* background: gold; */
+}
+
+.section .inner ul.product li {
+    width: 260px;
+    /* background: skyblue; */
+}
+
+.section .inner ul.product li a {
+    width: 100%;
+    height: 350px;
+    display: block;
+}
+
+.section .inner ul.product li a .imgbox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.section .inner ul.product li a .imgbox img {
+    width: 100%;
+    height: 100%;
+}
+
+.section .inner ul.product li a .imgbox .rank {
+    width: 36px;
+    height: 36px;
+    background: rgba(112, 113, 111, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    line-height: 36px;
+}
+
+.section .inner ul.product li a .imgbox .bar{
+    width: 100%;
+    height: 48px;
+    background: rgba(112, 113, 111, 0.5);
+    position: absolute;
+    left: 0;
+    /* 마우스를 갖다댔을때 올라와야하는 박스니까 */
+    bottom: -48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.section .inner ul.product li a .imgbox:hover .bar{
+    bottom: 0;
+}
+
