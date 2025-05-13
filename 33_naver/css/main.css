@@ -6,7 +6,7 @@
     font-style: normal;
 }
 body{
-        font-family: 'NanumSquareRound';
+        font-family: 'NanumSquareRound', sans-serif;
 }
 
 *{margin: 0; padding: 0;}
