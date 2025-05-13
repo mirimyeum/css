@@ -1,0 +1,73 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+        font-family: 'NanumSquareRound', sans-serif;
+}
+
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+.section{
+    width: 100%;
+    padding: 80px;
+    /* background: gold; */
+}
+
+.section .inner{
+    width: 1200px;
+    margin: auto;
+    /* background: pink; */
+}
+
+.section .inner h2{
+    font-size: 38px;
+    color: #072b5f;
+    font-weight: 900;
+    margin-bottom: 80px ;
+}
+
+.section .inner ul{
+    width: 1200px;
+    display: flex;
+    gap: 24px;
+    /* background: skyblue; */
+}
+
+.section .inner ul li{
+    width: 384px;
+    /* background: orange; */
+    transition: all 0.5s ease-in-out;
+}
+
+.section .inner ul li a{
+    display: block;
+    width: 100%;
+}
+
+.section .inner ul li a .imgbox{
+    width: 100%;
+    height: 217px;
+    margin-bottom: 28px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.section .inner ul li a .imgbox img{
+    width: 100%;
+}
+
+.section .inner ul li a h3{
+    font-size: 20px;
+    color: #13264e;
+    font-weight: 700;
+}
+
+.section .inner ul li:hover{
+    transform: translateY(-10px);
+}
