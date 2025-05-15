@@ -1,0 +1,94 @@
+@charset "utf-8";
+body{
+
+}
+*{margin: 0; padding: 0;}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 애니메이션 실행명령 */
+
+    /* 애니메이션을 실행할 이름 */
+    animation-name: box_ani;
+
+    /* 실행시간을 부여 */
+    animation-duration: 2s;
+
+    /* 원래대로 돌아가지 않게 멈추는 명령 */
+    animation-fill-mode: forwards;
+
+    /* 애니메이션 반복횟수 */
+    animation-iteration-count: 5;
+
+    /* 애니메이션 무한반복 */
+    animation-iteration-count: infinite;
+
+    /* 애니메이션 실행시 지연시간 */
+    animation-delay: 1s;
+
+    /* 애니메이션 가속도 붙이기 */
+    animation-timing-function: ease-in-out;
+
+    /* 애니메이션 방향 설정 */
+    animation-direction: alternate;
+}
+
+/* 애니메이션 설정 */
+@keyframes box_ani {
+    0%{left: 0;}
+    100%{left: 1000px;}
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    /* 애니메이션 실행방법 -> 약식(시작시간~지연시간) */
+    animation: box2_ani 3s ease-in-out forwards infinite 1s reverse;
+}
+
+/* 애니메이션이 지나가면서 해당 픽셀에서 색변화 */
+@keyframes box2_ani {
+    0%{left: 0;}
+    25%{left: 250px; background: orange;}
+    50%{left: 500px; background: yellow;}
+    75%{left: 750px; background: green;}
+    100%{left: 1000px; background: blue;}
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background: purple;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    left: 0;
+    top: 400px;
+    /* 애니메이션 약식실행 */
+    animation: box3_ani 4s ease-in-out forwards infinite;
+     border-radius: 100%;
+}
+
+@keyframes box3_ani {
+    0%{left: 0; top: 400px;}
+    25%{left: 500px; top: 400px;}
+    50%{left: 500px; top: 900px;}
+    75%{left: 0; top: 900px;}
+    100%{left: 0; top: 400px;}
+}
