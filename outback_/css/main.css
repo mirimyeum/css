@@ -1,0 +1,166 @@
+@charset "utf-8"
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* 하이퍼링크 a태그의 밑줄 없애기 */
+a {
+    text-decoration: none;
+}
+
+.header {
+    /* 부모를 기준으로 브라우저의 가로사이즈를 꽉차게 설정할때 */
+    width: 100%;
+    height: 100px;
+    background: #661d16;
+}
+
+.header .inner {
+    width: 1180px;
+    height: 100px;
+    margin: auto;
+}
+
+/* float의 목적은 아래로 내려가는 명령을 한 행으로 나열 */
+.header .inner h1 {
+    float: left;
+    margin: 27px 97px 0 0;
+}
+
+.header .inner .gnb {
+    float: left;
+}
+
+.header .inner .gnb>li {
+    float: left;
+    margin-right: 32px;
+    line-height: 100px;
+    /* text-align: center; */
+    position: relative;
+}
+
+.header .inner .gnb>li>a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 19px;
+    /* 글자사이의 간격(자간)을 바꿀때 */
+    letter-spacing: 2px;
+    /* 커서 높이 영역 */
+    /* border: 1px solid #fff; */
+    display: block;
+    height: 100px;
+    position: relative;
+}
+
+.header .inner .gnb>.last{
+    text-align: center;
+}
+
+/* a요소의 아래 테두리선(경계선과 동일) */
+.header .inner .gnb>li>a::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: #B5181F;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    display: none;
+}
+
+.header .inner .gnb>li:hover>a::after {
+    display: block;
+}
+
+.gnb>.last {
+    margin-right: 0;
+}
+
+/* 2단 메뉴 */
+.header .inner .gnb>li>.depth2 {
+    width: 171px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100px;
+    display: none;
+}
+
+.header .inner .gnb>li>.depth2>li {
+    line-height: 38px;
+}
+
+.header .inner .gnb>li>.depth2>li>a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.header .inner .gnb>li:hover>.depth2{
+    display: block;
+}
+
+.header .inner .gnb>.menu>.depth2 {
+    width: 258px;
+}
+
+.header .inner .gnb>.membership>.depth2 {
+    width: 239px;
+}
+
+.header .inner .gnb>.benefit>.depth2 {
+    width: 168px;
+}
+
+.header .inner .gnb>.last>.depth2 {
+    width: 60px;
+}
+
+
+
+
+
+
+
+.header .inner .login {
+    float: right;
+}
+
+.header .inner .login li {
+    float: left;
+    margin-left: 20px;
+    line-height: 100px;
+}
+
+.header .inner .login .first {
+    margin-left: 0;
+}
+
+.header .inner .login li a {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.header .inner .login .last {
+    background: #23221d;
+    padding: 10px 20px;
+}
+
+
+.visual {
+    width: 100%;
+    height: 900px;
+    background: url(../images/visual.png) no-repeat center top;
+}
