@@ -1,0 +1,75 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+
+*{margin: 0; padding: 0;}
+
+div{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.box1{
+    /* 직선형 그라디언트 */
+    /* 위에서 아래로 */
+    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient( 90deg, red, yellow);
+}
+
+.box2{
+    /* 좌에서 우로 */
+    background-image: linear-gradient(to right, red, yellow);
+    background-image: linear-gradient( 0deg, red, yellow);
+}
+
+.box3{
+    /* 우측에서 좌로 */
+    background-image: linear-gradient(to left, red, yellow);
+    background-image: linear-gradient( 180deg, red, yellow);
+}
+
+.box4{
+    background-image: linear-gradient(to top, red, yellow);
+}
+
+.box5{
+    background-image: linear-gradient(45deg, red, yellow);
+}
+
+.box6{
+    background-image: linear-gradient(to right,red, yellow, blue);
+}
+
+.box7{
+    /* 위에서 아래로 */
+    background-image: linear-gradient(to bottom, red 10%, yellow 20%, green 70%);
+}
+
+.box8{
+    background-image: linear-gradient(to bottom, red 50%, blue 50%);
+}
+
+.box9{
+    background-image: radial-gradient(red, yellow, blue);
+}
+
+.box10{
+    background-image: radial-gradient(circle, red, yellow, blue);
+}
+
+.box11{
+    /* 각도형 그라디언트 */
+    background-image: conic-gradient(red, blue);
+}
+.figma{
+    width: 320px;
+    height: 117px;
+    border-radius: 8px;
+    background-image: linear-gradient(45deg, #D65983, #9D5DD8 );
+}
+.box12{
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, navy, purple);
+}
