@@ -1,0 +1,167 @@
+@charset "utf";
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+.nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+}
+
+body {
+    font-family: 'NanumBarunGothic', sans-serif;
+    color: #777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 115px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 a {
+    background: url(../images/logo.jpg) no-repeat;
+    display: block;
+    width: 278px;
+    height: 20px;
+    text-indent: -99999px;
+}
+
+.inner {
+    width: 1360px;
+    height: 60px;
+    background: #fff;
+    margin: auto;
+    position: relative;
+}
+
+.inner .gnb {
+    display: flex;
+    /* 높이설정을 해야 중심을 찾음 */
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    position: relative;
+
+
+}
+
+/* .inner .gnb>li {
+
+} */
+
+.inner .gnb>li>a {
+    font-size: 16px;
+    color: rgb(1, 1, 1);
+    font-weight: 500;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+
+}
+
+.inner .gnb>li:hover>a {
+    color: #b8a37f;
+}
+
+
+/* 2단메뉴 디자인 */
+
+.inner .gnb>li>.depth2 {
+    width: 1360px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    background: rgba(255, 255, 255, 0.7);
+    display: none;
+}
+
+.inner .gnb>li:hover>.depth2 {
+    /* 숨김처리를 보이게 할때 -> flex는 flex끼리 block은 block끼리만 연결가능 */
+    display: flex;
+}
+
+.inner .gnb>li>.depth2 li a {
+    font-size: 14px;
+    color: #777;
+    letter-spacing: -1px;
+}
+
+.inner .gnb>li>.depth2 li:hover a {
+    color: #000;
+    font-weight: 500;
+}
+
+.inner .gnb>li>.depth2 .intro {
+    margin-left: 235px;
+}
+
+.inner .gnb>li>.depth2 .news {
+    margin-left: 450px;
+}
+
+.inner .gnb>li>.depth2 .center {
+    margin-left: 539px;
+}
+
+.inner .gnb>li>.depth2 .info {
+    margin-left: 316px;
+}
+
+.inner .gnb>li>.depth2 .announce {
+    margin-left: 622px;
+}
+
+
+
+/* 메인 비주얼 이미지 */
+
+.main {
+    width: 100%;
+}
+
+.main .visual {
+    width: 1360px;
+    margin: auto;
+}
