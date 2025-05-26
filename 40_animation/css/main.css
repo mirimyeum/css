@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+body {
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 1400px;
+    height: 640px;
+    border: 11px solid #000;
+    margin: auto;
+    position: relative;
+}
+
+/* 박스안에 마우스를 갖다대면(hover), 일시정지되고 
+마우스를 벗어나면 다시 재생되는 명령*/
+.box:hover .clock{
+    animation-play-state: paused;
+}
+
+/* 상단 시계 */
+.box .clock {
+    position: absolute;
+    left: 50%;
+    margin-left: -82.5px;
+    top: 0;
+    transform: rotate(45deg);
+    /* 중심축을 변경하는 명령 */
+    transform-origin: center top;
+    animation: clock_ani 1s ease-in-out forwards infinite;
+}
+
+/* 애니메이션 설정 */
+@keyframes clock_ani {
+    0%{transform: rotate(45deg);}
+    50%{transform: rotate(-45deg);}
+    100%{transform: rotate(45deg);}
+}
+
+.box:hover .clock2{
+    animation-play-state: paused;
+}
+
+/* 오른쪽 시계 */
+.box .clock2 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-right: -82.5px;
+    transform: rotate(135deg);
+    /* 중심축을 변경하는 명령 */
+    transform-origin: center top;
+    animation: clock2_ani 1s ease-in-out forwards infinite;
+}
+
+@keyframes clock2_ani {
+    0%{transform: rotate(135deg);}
+    50%{transform: rotate(45deg);}
+    100%{transform: rotate(135deg);}
+}
+
+.box:hover .clock3{
+    animation-play-state: paused;
+}
+
+/* 하단시계 */
+
+.box .clock3 {
+    position: absolute;
+    left: 50%;
+    margin-left: -82.5px;
+    bottom: -342px;
+    transform: rotate(-225deg);
+    /* 중심축을 변경하는 명령 */
+    transform-origin: center top;
+    animation: clock3_ani 1s ease-in-out forwards infinite;
+}
+
+/* 애니메이션 설정 */
+@keyframes clock3_ani {
+    0%{transform: rotate(-225deg);}
+    50%{transform: rotate(-135deg);}
+    100%{transform: rotate(-225deg);}
+}
+
+.box:hover .clock4{
+    animation-play-state: paused;
+}
+
+/* 왼쪽시계 */
+.box .clock4 {
+    position: absolute;
+    left: 0;
+    /* transform: translateX(-50%); */
+    margin-left: -82.5px;
+    top: 50%;
+    transform: rotate(45deg);
+    /* 중심축을 변경하는 명령 */
+    transform-origin: center top;
+    animation: clock4_ani 1s ease-in-out forwards infinite;
+}
+
+/* 애니메이션 설정 */
+@keyframes clock4_ani {
+    0%{transform: rotate(-135deg);}
+    50%{transform: rotate(-45deg);}
+    100%{transform: rotate(-135deg);}
+}
+
+.box .line {
+    width: 8px;
+    height: 166px;
+    margin: auto;
+    background: #000;
+}
+
+.box .circle {
+    width: 165px;
+    height: 165px;
+    border-radius: 100%;
+    background: red url(../images/1.jpg) no-repeat 80%;
+    background-size: cover;
+    border: 5px solid #000;
+    margin: auto;
+}
+
+.box h3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 42px;
+}
