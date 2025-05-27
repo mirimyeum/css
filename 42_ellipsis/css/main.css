@@ -1,0 +1,210 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    background: #f3f3f3;
+    padding-top: 20px;
+}
+
+.inner {
+    width: 1100px;
+    height: 260px;
+    margin: auto;
+    /* background: skyblue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner .leftbox {
+    width: 540px;
+    height: 260px;
+    background: url(../images/bg_search2024_03_02.jpg) no-repeat;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.inner .leftbox h2 {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.inner .leftbox p {
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.inner .leftbox form fieldset {
+    border: none;
+}
+
+.inner .leftbox form fieldset legend {
+    position: absolute;
+    left: -99999px;
+}
+
+.inner .leftbox form fieldset input {
+    width: 220px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #475E80;
+    /* 들여쓰기 */
+    text-indent: 10px;
+    float: left;
+    /* input 클릭시 테두리 나오는거 없애기 */
+    outline: none;
+}
+
+.inner .leftbox form fieldset button {
+    width: 80px;
+    height: 43px;
+    background: #2264BB;
+    color: #fff;
+    float: left;
+}
+
+/* 오른쪽 박스 */
+.section .inner .right {
+    width: 540px;
+    height: 260px;
+    background: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.section .inner .right .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section .inner .right .wrap .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.section .inner .right .wrap .menu li a{
+    font-size: 20px;
+    color: #888;
+    font-weight: 800;
+}
+
+.section .inner .right .wrap .menu li:first-child a{
+    color: #333;
+}
+
+.section .inner .right .wrap .menu li{
+    position: relative;
+}
+
+.section .inner .right .wrap .menu li::before{
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #ccc;
+    position: absolute;
+    right: -15px;
+    top: 30%;
+    transform: translate(-50%);
+}
+
+.section .inner .right .wrap .menu li:last-child::before{
+    display: none;
+}
+
+.section .inner .right .wrap .more{
+    text-indent: -99999px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.section .inner .right .wrap .more::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url(../images/spr_common.png) no-repeat;
+    background-position: -147px -77px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section .inner .list li{
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.section .inner .right .list li::after{
+    content: "";
+    width: 3px;
+    height: 3px;
+    background: #888;
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.section .inner .right .list li:first-child::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/spr_common.png) no-repeat;
+    background-position: -33px -125px;
+    position: absolute;
+    left: 73%;
+    top: 25%;
+}
+.section .inner .right .list li a{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    /* 말줄임표를 하기위한 방법 */
+    /* 1. 가로사이즈 고정 */
+    width: 334px;
+    /* 줄바뀜 방지 */
+    white-space: nowrap;
+    /* 박스크기 안에서만 텍스트내용 보이게 */
+    overflow: hidden;
+    /* 넘치는 text는 ...으로 보여주기 */
+    text-overflow: ellipsis;
+    /* a태그 가이드라인 */
+    /* border: 1px solid red; */
+}
+.section .inner .right .list li span{
+    font-size: 16px;
+    color: #999;
+}
