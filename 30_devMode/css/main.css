@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    padding: 0 16px;
+}
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{border: none; background: none; cursor: pointer;}
+
+/* 검색바 */
+.search{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.search input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border: 1px solid #999;
+    padding: 0 16px;
+    text-indent: 32px;
+    outline: none;
+}
+
+.search input ::placeholder{
+    color: #999;
+    font-size: 16px;
+}
+
+.search .fa-magnifying-glass{
+    color: #c8c8c8;
+    font-size: 24px;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 메인이미지 */
+.visual{
+ width: 100%;
+ margin-top: 16px;
+}
+.visual img{
+    width: 100%;
+}
+
+/* 카테고리 */
+.keyword{
+    width: 100%;
+    padding: 16px 0;
+    box-sizing: border-box;
+}
+.keyword .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 키워드 */
+.keyword ul.btnwrap{
+    display: flex;
+    /* gap: 40px; */
+    flex-wrap: wrap;
+    padding-top: 16px;
+}
+.keyword ul.btnwrap li{
+     margin-right: 40px;
+}
+.keyword ul.btnwrap li a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: #956BDA;
+    padding: 8px 12px;
+}
+.keyword ul.btnwrap li:nth-child(5) a,
+.keyword ul.btnwrap li:nth-child(6) a{
+    display: block;
+    margin-top: 16px;
+}
+
+/* 탭바 */
+ul.tabbar{
+    width: 100%;
+    height: 62px;
+    border-top: 1px solid #C8C8C8;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+ul.tabbar li{
+    
+}
+ul.tabbar li a{
+ color: #C8C8C8;
+}
+ul.tabbar li:first-child a{
+    color: #235BF5;
+}
