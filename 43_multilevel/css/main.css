@@ -1,0 +1,67 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+/* 메뉴바와 로고 */
+.inner{
+    width: 800px;
+    height: 150px;
+    margin: auto;
+    background: #F56074 url(../images/nav2.png)no-repeat center right;
+    padding: 0 45px;
+    box-sizing: border-box;
+}
+
+.inner ul.gnb{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.inner ul.gnb a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* 다단 텍스트 설정 */
+.content{
+    width: 800px;
+    /* background: pink; */
+    margin: 30px auto 15px;
+    font-size: 15px;
+    /* 문단 양끝 정리 */
+    text-align: justify;
+    /* 다단개수설정 */
+    column-count: 3;
+    /* 다단과 다단과의 간격 */
+    column-gap: 30px;
+    /* 다단간에 경계선 삽입 */
+    column-rule: 1px dotted #333;
+}
+.content h3, .content h4, .content p{
+    margin-bottom: 20px;
+    letter-spacing: -0.8px;
+}
+.content p{
+    line-height: 22.5px;
+}
+
+/* 강아지 갤러리 */
+.photo{
+    width: 800px;
+    height: 172px;
+    background: #ccc;
+    margin: auto;    
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
