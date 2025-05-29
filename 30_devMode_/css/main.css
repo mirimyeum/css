@@ -16,7 +16,6 @@ button{border: none; background: none; cursor: pointer;}
     height: 50px;
     position: relative;
 }
-
 .search input{
     width: 100%;
     height: 100%;
@@ -27,12 +26,10 @@ button{border: none; background: none; cursor: pointer;}
     text-indent: 32px;
     outline: none;
 }
-
 .search input ::placeholder{
     color: #999;
     font-size: 16px;
 }
-
 .search .fa-magnifying-glass{
     color: #c8c8c8;
     font-size: 24px;
@@ -66,12 +63,14 @@ button{border: none; background: none; cursor: pointer;}
 /* 키워드 */
 .keyword ul.btnwrap{
     display: flex;
-    /* gap: 40px; */
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
     padding-top: 16px;
 }
 .keyword ul.btnwrap li{
-     margin-right: 40px;
+   padding-top: 16px;
 }
 .keyword ul.btnwrap li a{
     font-size: 15px;
@@ -80,10 +79,50 @@ button{border: none; background: none; cursor: pointer;}
     background: #956BDA;
     padding: 8px 12px;
 }
-.keyword ul.btnwrap li:nth-child(5) a,
+/* .keyword ul.btnwrap li:nth-child(5) a,
 .keyword ul.btnwrap li:nth-child(6) a{
     display: block;
     margin-top: 16px;
+} */
+
+/* 상품목록 */
+.new {
+    margin-top: 16px;
+}
+.new ul.list{
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.new ul.list li{
+    width: 48%;
+
+}
+.new ul.list li a .imgbox{
+    display: block;
+    width: 100%;
+}
+.new ul.list li a .imgbox img{
+    width: 100%;
+}
+.new ul.list .info{
+    width: 100%;
+}
+.new ul.list .info h3{
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+.new ul.list .info .model{
+    padding: 16px 0 8px 0;
+}
+.new ul.list .info .price{
+    padding: 0px 0 16px 0;
+}
+.new ul.list .info span{
+    width: 24px;
+    height: 24px;
 }
 
 /* 탭바 */
