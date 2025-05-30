@@ -1,0 +1,103 @@
+@charset "utf-8";
+body {
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+:root{
+    --boxbg:#E84C4D;
+    --txtbg:#fff;
+    --h2:#000;
+    --p:#515966;
+    --gap:20px;
+    --border:#ccc;
+    --padd: 37px 20px 32px 20px;
+    --tit:26px;
+    --body:20px;
+    --h4:14px;
+    --eventpadd:0 12px;
+}
+
+section{
+    width: 100%;
+}
+section ul{
+    width: 660px;
+    margin: auto;
+    display: flex;
+    gap: var(--gap);
+}
+section ul li{
+    width: 320px;
+    background: var(--txtbg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+section ul li a{
+    width: 100%;
+    
+}
+section ul li a .imgbox{
+    width: 100%;
+    height: 240px;
+    
+    
+}
+section ul li a .imgbox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px 14px 0 0;
+}
+section ul li a .txt{
+    width: 100%;
+    padding: var(--padd);
+}
+section ul li a .txt h2{
+    font-size: var(--tit);
+    color: var(--h2);
+    margin-bottom: 24px;
+}
+section ul li a .txt p{
+    font-size: var(--body);
+    color: var(--p);
+    margin-bottom: 12px;
+}
+section ul li a .txt .last{
+    margin-bottom: 0;
+}
+section ul li a .txt .left{
+    width: 120px;
+    height: 35px;
+    background: var(--boxbg);
+    position: absolute;
+    left: 33.8%;
+    top: 225px;
+}
+section ul li a .txt .right{
+    width: 197px;
+    height: 35px;
+    background: var(--boxbg);
+    position: absolute;
+    left: 51.5%;
+    top: 225px;
+}
+section ul li a .txt .left,
+section ul li a .txt .right{
+    color: var(--txtbg);
+    text-align: center;
+    line-height: 35px;
+    border-radius: 4px;
+    font-size: var(--h4);
+    padding: var(--eventpadd);
+}
