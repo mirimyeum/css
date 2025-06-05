@@ -1,0 +1,81 @@
+@charset "utf-8";
+body{
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PC기기일때 1200px이상*/
+.wrap{
+    width: 1000px;
+    /* border: 6px solid #000; */
+    margin: auto;
+}
+.wrap .red{
+    width: 100%;
+    height: 150px;
+    background: red;
+}
+/* .wrap .box_wrap{
+    display: flex;
+} */
+.wrap .box_wrap .blue{
+    width: 50%;
+    height: 120px;
+    background: blue;
+    float: left;
+}
+.wrap .box_wrap .green{
+    width: 50%;
+    height: 120px;
+    background: green;
+    float: left;
+}
+
+/* 노트북일때 991px ~ 1199px*/
+@media ( min-width:991px ) and ( max-width:1199px ){
+    /* PC기준으로 노트북 사이즈로 코딩할때, 시안의 변경된 부분만 코딩하면된다.  */
+    .wrap{
+        width: 100%;
+    }
+    body{
+        padding: 0 20px;
+    }
+}
+
+/* 테블렛일때 768px ~990*/
+@media ( min-width:768px ) and ( max-width:990px ){
+    /* 노트북이 아닌 PC기준으로 테블렛 사이즈로 코딩할때, 시안의 변경된 부분만 코딩하면된다.  */
+    .wrap{
+        width: 100%;
+    }
+    .wrap .box_wrap .blue{
+        height: 240px;
+    }
+    .wrap .box_wrap .green{
+        height: 240px;
+    }
+}
+
+/* 모바일일때 320px ~ 767px*/
+@media ( min-width:320px ) and ( max-width:767px ){
+    /* 테블렛이 아닌 PC기준으로 모바일 사이즈로 코딩할때, 시안의 변경된 부분만 코딩하면된다.  */
+    .wrap{
+        width: 100%;
+    }
+    .wrap .red{
+        height: 300px;
+    }
+    .wrap .box_wrap .blue{
+        /* 아래로 쌓이기 위해 float을 해제한다. */
+        width: 100%;
+        float: none;
+    }
+    .wrap .box_wrap .green{
+        width: 100%;
+        float: none;
+    }
+}
