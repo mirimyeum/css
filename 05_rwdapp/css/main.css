@@ -1,0 +1,196 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* pc기기일때 */
+.wrap{
+    width: 960px;
+    margin: auto;
+    background: gold;
+}
+.wrap header{
+    width: 100%;
+    height: 400px;
+    background: url(../images/main_img02.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.wrap header h1{
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.wrap header h1 a{
+    color: #333;
+        font-size: 36px;
+
+}
+.wrap header nav ul.gnb{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.wrap header nav ul.gnb li{
+    width: 25%;
+    height: 50px;
+    
+}
+.wrap header nav ul.gnb li a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background: rgba(225, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+.wrap header nav ul.gnb li:hover a{
+    background: rgba(225, 0, 0, 1);
+}
+
+
+.wrap main{
+    width: 100%;
+    background: #fff;
+    display: flex;
+    padding: 20px;
+}
+.wrap main section{
+    width: 70%;
+    /* background: pink; */
+    padding-right: 20px;
+}
+.wrap main section h1{
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.wrap main section article h3{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.wrap main section article p{
+    font-size: 16px;
+    color: #666;
+    line-height: 26px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.wrap main aside{
+    width: 30%;
+    /* background: skyblue; */
+}
+.wrap main aside a{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.wrap main aside a img{
+    width: 100%;
+}
+.wrap main aside a img:hover{
+    filter: grayscale(1);
+}
+
+
+.wrap footer{
+    width: 100%;
+    height: 50px;
+    background: #333;
+}
+.wrap footer p{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+/* mobile기기일때 (320-767) */
+@media ( min-width:320px ) and ( max-width:767px ){
+    .wrap{
+        width: 96%;
+    }
+    .wrap header{
+        height: 640px;
+        background-position: 50% center;
+    }
+    .wrap header h1{
+        top: 20px;
+    }
+    .wrap header nav ul.gnb{
+        flex-direction: column; 
+        height: 230px;
+        width: 80%;       
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        gap: 10px;
+    }
+    .wrap header nav ul.gnb li{
+        width: 100%;
+    }
+    .wrap header nav ul.gnb li a{
+        width: 100%;
+        border-radius: 16px;
+    }
+    .wrap main{
+        flex-direction: column;
+    }
+    .wrap main section{
+        width: 100%;
+    }
+    .wrap main aside{
+        width: 100%;
+    }
+}
+
+
+
+
+/* tablet기기일때 (768-991)*/
+@media ( min-width:768px ) and ( max-width:991px ){
+    .wrap{
+        width: 96%;
+    }
+    .wrap header{
+        height: 326px;
+    }
+    .wrap main{
+        flex-direction: column;
+    }
+      .wrap main section{
+        width: 100%;
+    }
+    .wrap main aside{
+        width: 100%;
+    }
+    .wrap main aside{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+}
