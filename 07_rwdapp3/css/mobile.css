@@ -1,0 +1,23 @@
+@media ( min-width:320px ) and ( max-width:767px ) {
+    header .inner{
+        width: 100%;
+        height: 67px;
+    }
+    header .inner h1{
+        margin-left: 16px;
+    }
+    header .inner nav ul.gnb,
+    header .inner .lang{
+        display: none;
+    }
+    
+    header .inner .m_icon{
+        display: block;
+        font-size: 14px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 20px;
+    }
+}
