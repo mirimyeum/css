@@ -1,0 +1,314 @@
+@media ( min-width:992px ) and ( max-width:1024px ){}
+/* 헤더 */
+header{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid #777777;
+}
+header .inner{
+    width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+} 
+/* 모바일 메뉴버튼이 pc기기에서는 보이지 않기에 숨김처리 */
+.m_btn{
+    display: none;
+}
+header .inner h1{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .inner h1 a{
+    display: block;
+    font-size: 28px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+header .inner nav{
+    width: 100%;
+    text-align: center;
+}
+header .inner nav ul.gnb{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+}
+header .inner nav ul.gnb li a{
+    display: block;
+    color: #333;
+    font-size: 16px;
+}
+header .inner .sns{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .inner .sns a{
+    margin-left: 6px;
+    font-size: 16px;
+    color: #777777;
+}
+
+/* 메인의 비주얼이미지 */
+main{
+    width: 100%;
+}
+main .visual{
+    width: 100%;
+    height: 800px;
+    background: url(../images/main02.jpg)no-repeat top;
+    background-size: cover;
+    position: relative;
+}
+main .visual .title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+main .visual h2{
+    font-size: 56px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+main .visual p{
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+
+/* 메인의 피규어1(이미지에 대한 설명)*/
+main figure.first{
+    width: 100%;
+    height: 300px;
+    background: #fff;
+    padding: 100px 0;
+}
+main figure.first p{
+    text-transform: capitalize;
+    font-size: 18px;
+    text-align: center;
+    line-height: 42px;
+    color: #666;
+}
+
+/* 메인의 워크 */
+main .work{
+    width: 100%;
+    background: #EFEFEF;
+    padding: 90px 0 50px 0;
+}
+main .work .inner{
+    width: 1200px;
+    height: 495px;
+    margin: auto;
+    padding: 0 23px;
+}
+main .work .inner .title2{
+    text-align: center;
+}
+main .work .inner .title2 h2,
+.news .inner h2{
+    font-size: 36px;
+    text-transform: capitalize;
+}
+main .work .inner .title2 p,
+.news .inner p{
+    font-size: 16px;
+    margin: 16px 0 50px 0;
+    color: #666;
+    text-transform: capitalize;
+
+}
+main .work .inner ul.list{
+    width: 100%;
+    padding: 0 17px;
+    display: flex;
+    gap: 40px;
+}
+main .work .inner ul.list li{
+    width: 500px;
+    height: 332px;
+}
+main .work .inner ul.list li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+main .work .inner ul.list li a img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 메인의 스킬 */
+.skill{
+    width: 100%;
+    padding: 100px 0;
+}
+.skill .inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.skill .inner ul.list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.skill .inner ul.list li{
+    width: 380px;
+    text-align: center;
+    padding-top: 110px;
+}
+.skill .inner ul.list li:first-child{
+    background: url(../images/ico_code.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li:nth-child(2){
+    background: url(../images/ico_option.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li:nth-child(3){
+    background: url(../images/ico_setting.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li:nth-child(4){
+    background: url(../images/ico_support.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li:nth-child(5){
+    background: url(../images/ico_tools.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li:last-child{
+    background: url(../images/ico_transper.png) no-repeat center 30px;
+    background-size: 50px;
+}
+.skill .inner ul.list li a{
+    display: block;
+    width: 100%;
+}
+.skill .inner ul.list li a h3{
+    color: #6dc8fd;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.skill .inner ul.list li a p{
+    color: #666;
+    line-height: 20px;
+}
+
+/* 메인의 피규어2(이미지에 대한 설명)*/
+main figure.second{
+    width: 100%;
+    height: 400px;
+    background: url(../images/search01.png) no-repeat center top;
+    position: relative;
+}
+main figure.second p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    line-height: 39px;
+}
+/* 메인의 뉴스 */
+main .news{
+    width: 100%;
+    padding: 90px 0 50px;
+}
+main .news .inner{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+main .news .inner ul.list{
+    display: flex;
+    justify-content: space-evenly;
+}
+main .news .inner ul.list li{
+    width: 30%;
+}
+main .news .inner ul.list li a{
+    display: block;
+    width: 100%;
+}
+main .news .inner ul.list li a img{
+    width: 100%;
+}
+main .news .inner ul.list li a .imgbox{
+    width: 100%;
+}
+main .news .inner .txt{
+    text-align: right;
+    margin-top: 20px;
+}
+main .news .inner ul.list li a .txt h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: #666;
+    text-transform: capitalize;
+}
+main .news .inner .txt p{
+    margin: 0;
+}
+main .news .inner ul.list li a p{
+    margin: 12px 0;
+}
+
+/* 메인의 today */
+main .today{
+    width: 100%;
+    height: 240px;
+    background: #f2f2f2;
+    text-align: center;
+}
+main .today p{
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 80px;
+}
+main .today .btn_today{
+    width: 150px;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+/* 푸터 */
+footer{
+    width: 100%;
+    height: 56px;
+    background: #555555;
+}
+footer p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 56px;
+    color: #ccc;
+}
+footer p span{
+    color: #2DAAFF;
+}
