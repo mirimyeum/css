@@ -1,0 +1,59 @@
+@media ( min-width:320px ) and ( max-width:767px ){
+    /* 헤더 */
+    header{
+        height: 50px;
+        padding: 0 15px;
+    }
+    header .inner{
+        width: 100%;
+        height: 50px;
+    }
+
+    /* PC주메뉴 숨김 */
+    header .inner ul.gnb{
+        display: none;
+    }
+
+    /* 모바일메뉴 보이게 */
+    .m_btn{
+        display: block;
+        width: 24px;
+        height: 24px;
+        text-indent: -99999px;
+        background: url(../images/m_menu.png) no-repeat;
+        background-size: 24px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    header .inner h1 a{
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header .inner a.cart{
+        width: 24px;
+        height: 24px;
+        background: url(../images/m_mall.png) no-repeat;
+        background-size: 24px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* 메인 비주얼이미지 */
+    main .visual img{
+        /* background: url(../images/m_visual_a.jpg) no-repeat;
+        background-size: contain; */
+        width: 100%;
+    }
+   main p .show{
+    display: block;
+}
+    main p em{
+        display: none;
+    }
+}
