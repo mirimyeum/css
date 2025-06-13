@@ -1,0 +1,23 @@
+@charset "utf-8";
+body{
+    font-size: "맑은 고딕";
+}
+
+.box{
+    width: 100%;
+    margin: 0 auto;
+    background: gold;
+
+}
+.box div{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    background: pink;
+}
+p{
+    text-align: center;
+}
+p button{
+    cursor: pointer;
+}

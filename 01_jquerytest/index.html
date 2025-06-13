@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery테스트</title>
+    <link rel="stylesheet" href="./01_jquerytest/css/main.css">
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="./01_jquerytest/js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div></div>
+        <p>
+            <button>클릭</button>
+        </p>
+    </div>
+
+    <!-- 제이쿼리 프로그램을 하기위한 준비작업(바인딩)-->
+    <script>
+        $(function () {
+            // 제이쿼리선택자
+            //    $(서택자 입력).실행할 함수( );
+            // css( ) → 자바스크립트 프로그램으로 css를 접근한다.
+
+            // 1. 버튼을 클릭하면 기능한다.
+            $("button").click(function(){
+                // 2. 선택자를 css 명령한다 -> ..box div선택해서 css를 바꿈(문자는 반드시 "다운표랑 같이", 숫자는X)
+                $(".box div").css({ "background": "blue" })
+        })
+        })
+    </script>
+</body>
+
+</html>
