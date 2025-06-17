@@ -135,6 +135,32 @@ button{cursor: pointer;}
     color:#333;
     font-weight: 700;
 }
-.footer .inner .group .family2:hover ul{
+/* .footer .inner .group .family2:hover ul{
     display:block;
+} */
+
+.footer .inner .group .family1{
+    position: relative;
+}
+.footer .inner .group .family1 ul{
+    width: 140px;
+    border:1px solid #c6c7c9;
+    box-sizing: border-box;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom:59px;
+    text-indent: 10px;
+    /* 화면상에서 해당요소를 숨김 */
+    display:none;
+    height: 100px;
+    overflow: auto;
+}
+.footer .inner .group .family1 ul li a{
+    font-size:13px;
+    color:#5e5a57;  
+}
+.footer .inner .group .family1 ul li:hover a{
+    color:#333;
+    font-weight: 700;
 }
