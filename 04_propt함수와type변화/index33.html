@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt()와datatype변환응용</title>
+</head>
+<body>
+    
+
+    <script>
+        let num = prompt("번호를 입력하세요:");
+        let name = prompt("이름을 입력하세요:");
+        let kor = prompt("국어점수를 입력하세요:");
+        let eng = prompt("영어점수를 입력하세요:");
+        let math = prompt("수학점수를 입력하세요:");
+        // let total = prompt("총점을 입력하세요:");
+        // let average = prompt("평균을 입력하세요:");
+        let add = Number(kor) + Number(eng) + Number(math);
+        let divide = Number(add) / Number(3);
+
+        document.write("번호:" + num + "번" + "<br>");
+        document.write("이름:" + name + "님" +"<br>");
+        document.write("국어점수:" + kor + "점" + "<br>");
+        document.write("영어점수:" + eng + "점" + "<br>");
+        document.write("수학점수:" + math + "점" + "<br>");
+        document.write("총점:" + add + "점" + "<br>");
+        document.write("평균:" + divide + "점" + "<br>");
+    </script>
+</body>
+</html>
