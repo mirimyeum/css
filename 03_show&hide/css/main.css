@@ -1,0 +1,30 @@
+@charset "utf-8";
+body{
+
+}
+
+button{
+    cursor: pointer;
+}
+
+.box{
+    display: flex;
+    gap: 20px;
+}
+.box div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+.box div:first-child{
+    background: red;
+}
+.box div:nth-child(2){
+    background: orange;
+}
+.box div:nth-child(3){
+    background: yellow;
+}
+.box div:last-child{
+    background: green;
+}
