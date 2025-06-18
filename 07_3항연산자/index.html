@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3항연산자</title>
+</head>
+<body>
+    <!-- 
+    
+    조건식?참일때 실행:거짓일때실행
+    
+    -->
+
+    <script>
+
+        // 외부로부터 점수가 80점이상이면 "합격", 아니면 "불합격"이라는 데이터를 받아서
+
+        // let score = prompt("점수를 입력하세요.")
+        // if(score >= 80){
+        //     alert("합격");
+        // }else{
+        //     alert("불합격");
+        // }
+
+        // 위의 프로그램을 3항 연산자를 이용해서 개발하기(단축해서)
+
+        let score = prompt("점수를 입력하세요.");
+        score>=80?alert("합격"):alert("불합격");
+        
+    </script>
+</body>
+</html>
