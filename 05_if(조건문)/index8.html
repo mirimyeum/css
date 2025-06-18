@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if조건문 제4형식(다중if문)</title>
+</head>
+<body>
+    <!-- 
+        if(조건식){
+            
+        }else if(조건식){
+            참일때
+        }else if(조건식){
+            참일때
+        }else if(조건식){
+            참일때
+        }else if(조건식){
+            거짓일때 실행
+        } 
+        
+    -->
+    <script>
+        // 외부로부터 데이터를 이름,국어점수,영어점수,수학점수를 받아서 
+        // 총점 = 국어 + 영어 + 수학
+        // 평균 = 총점 / 3
+        // 평점 = 평균 90점이상이면 "수락"
+        // 평점 = 평균 80점이상이면 "우"
+        // 평점 = 평균 70점이상이면 "미"
+        // 평점 = 평균 60점이상이면 "양"
+        // 평점 = 나머지 평균점수면 "가"
+
+        let name = prompt("이름을 입력해주세요!")
+        let kor = prompt("국어점수를 입력해주세요")
+        let eng = prompt("영어점수를 입력해주세요")
+        let math = prompt("수학점수를 입력해주세요")
+        let total = Number(kor) + Number(eng) + Number(math)
+        let average = total / 3
+        let rem = "";
+
+        if(average >= 90){
+            rem = "수"
+        }else if(average >=80){
+            rem = "우"
+        }else if(average >=70){
+            rem = "미"
+        }else if(average >=60){
+            rem = "양"
+        }else {
+            rem = "가"
+        }
+
+        // 결과를 브라우저 body문에 출력
+        document.write("이름:" + name + "<br>")
+        document.write("국어점수:" + kor + "<br>")
+        document.write("영어점수:" + eng + "<br>")
+        document.write("수학점수:" + math + "<br>")
+        document.write("총점:" + total + "<br>")
+        document.write("평균:" + average + "<br>")
+        document.write("평점:" + rem + "<br>")
+    </script>
+</body>
+</html>

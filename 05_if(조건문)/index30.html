@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다중if응용문제</title>
+</head>
+<body>
+    <!-- 
+        외부로부터 데이터를 받아서 성명,국어,영어,수학,컴퓨터
+        총점 = 국어 + 영어 + 수학 + 컴퓨터
+        평균 = 총점 / 4
+        평점 = 평균이 90이상이면 "수"
+                    80이상이면 "우"
+                    70이상이면 "미"
+                    60이상이면 "양"
+              59밑으로 나머지는 "가"
+        학점 = 평균이 95이상이면 "A+"
+                    90이상이면 "A"
+                    85이상이면 "B+"
+                    80이상이면 "B"
+                    75이상이면 "C+"
+                    70이상이면 "C"
+                    65이상이면 "D+"
+                    60이상이면 "D"
+                    나머지면 "F"
+    -->
+
+    <script>
+        let name = prompt("이름을 입력하세요.");
+        let kor = prompt("국어 점수를 입력하세요.");
+        let eng = prompt("영어 점수를 입력하세요.");
+        let mat = prompt("수학 점수를 입력하세요.");
+        let lab = prompt("컴퓨터 점수를 입력하세요.");
+        let tot = Number(kor) + Number(eng) + Number(mat) + Number(lab);
+        let avr = tot / 4;
+        let rem = "";
+        let hak = "";
+
+        if(avr >= 90){
+            rem = "수"
+        }else if(avr >= 80){
+            rem = "우"
+        }else if(avr >= 70){
+            rem = "미"
+        }else if(avr >=60){
+            rem = "양"
+        }else{
+            rem = "가"
+        }
+
+        if(avr >= 95){
+            hak = "A+"
+        }else if(avr >= 90){
+            hak = "A"
+        }else if(avr >= 85){
+            hak = "B+"
+        }else if(avr >= 80){
+            hak = "B"
+        }else if(avr >= 75){
+            hak = "C+"
+        }else if(avr >= 70){
+            hak = "C"
+        }else if(avr >= 65){
+            hak = "D+"
+        }else if(avr >= 60){
+            hak = "D"
+        }else{
+            hak = "F"
+        }
+
+        document.write("이름:" + name + "<br>")
+        document.write("국어점수:" + kor + "<br>")
+        document.write("영어점수:" + eng + "<br>")
+        document.write("수학점수:" + mat + "<br>")
+        document.write("컴퓨터점수:" + lab + "<br>")
+        document.write("총점:" + tot + "<br>")
+        document.write("평균:" + avr + "<br>")
+        document.write("평점:" + rem + "<br>")
+        document.write("학점:" + hok + "<br>")
+
+    </script>
+</body>
+</html>
