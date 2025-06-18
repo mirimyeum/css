@@ -1,0 +1,141 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body{
+     font-family: "Noto Sans KR", sans-serif;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{border: none; background: none; cursor: pointer;}
+img{border: none; display: block;}
+
+/* header */
+header{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid #999;
+}
+header .inner{
+    width: 1130px;
+    height: 100%;
+    /* background: pink; */
+    margin: 0 auto;
+}
+
+/* top header */
+header .inner .top{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .inner .top ul.lang{
+    display: flex;   
+    gap: 20px;
+}
+header .inner .top ul.lang li a{
+    font-size: 13px;
+    color: #8d8d8d;
+}
+header .inner .top ul.sns{
+    display: flex;
+    gap: 20px;
+}
+header .inner .top ul.sns li a{
+    font-size: 13px;
+    color: #8d8d8d;
+}
+
+/* bottom header */
+header .inner .bottom{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .inner .bottom h1{
+    width: 211px;
+    height: 30px;
+}
+header .inner .bottom ul.gnb{
+    display: flex;
+    gap: 60px;
+}
+header .inner .bottom ul.gnb li a p{
+    font-size: 16px;
+    color: #979797;
+    text-align: center;
+}
+header .inner .bottom ul.gnb li a h3{
+    font-size: 16px;
+    color: #676767;
+    text-align: center;
+}
+
+/* 메인비주얼 슬라이드 */
+main{
+    width: 100%;
+}
+main .slider{
+    width: 100%;
+}
+main .slider div a{
+    display: block;
+    width: 100%;
+    height: 550px;
+}
+main .slider .visual1 a{
+    background: url(../images/2023_greek_pcmain.jpg) no-repeat center top;
+}
+main .slider .visual2 a{
+    background: url(../images/2024_han_pcmain.jpg) no-repeat center top;
+}
+main .slider .visual3 a{
+    background: url(../images/2024_tira_pcmain.jpg) no-repeat center top;
+}
+main .slider .visual4 a{
+    background: url(../images/2024_zero_pcmain.jpg) no-repeat center top;
+}
+main .slider .visual5 a{
+    background: url(../images/2024bingsu.jpg) no-repeat center top;
+}
+main .slider .visual6 a{
+    background: url(../images/2025_straw_pcmain.jpg) no-repeat center top;
+}
+main .slider .visual7 a{
+    background: url(../images/2025_yobing_pcmain.jpg) no-repeat center top;
+}
+main .slider .visual8 a{
+    background: url(../images/2025_zero_pcmain.jpg) no-repeat center top;
+}
+/* 좌우버튼 교체 */
+/* 좌(이전)버튼 수정 */
+main .slider .slick-prev{
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 50%;
+    margin-left: -700px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: url(../images/btn_slide_prev_new.png) no-repeat;
+    text-indent: -99999px;
+    width: 18px;
+    height: 30px;
+}
+main .slider .slick-next{
+    /* border: 1px solid red; */
+    position: absolute;
+    right: 50%;
+    margin-right: -700px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: url(../images/btn_slide_next_new.png) no-repeat;
+    text-indent: -99999px;
+    width: 18px;
+    height: 30px;
+}
