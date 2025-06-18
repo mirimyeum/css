@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch(조건문)응용</title>
+</head>
+<body>
+    <!-- 
+    
+        외부로부터 데이터 1-12월을 입력받아서
+        1-12 이외의 값이 들어오면 경고창으로 "1-12중에서만 입력해주세요!!"
+
+        1,3,5,7,8,10,12 -> 일수가 31일까지
+        4,6,9,11 -> 일수가 30일까지
+        2 -> 일수가 28일까지
+
+        <출력결과>
+        "입력하신 1월은 일수가 31일입니다."
+
+    -->
+
+    <script>
+
+        let month = prompt("1-12중에서만 입력해주세요!!")
+
+        switch(month){
+            case '1':
+            alert("입력하신 1월은 일수가 31일입니다.");
+            break;
+            case '2':
+            alert("입력하신 2월은 일수가 28일입니다.");
+            break;
+            case '3':
+            alert("입력하신 3월은 일수가 31일입니다.");
+            break;
+            case '4':
+            alert("입력하신 4월은 일수가 30일입니다.");
+            break;
+            case '5':
+            alert("입력하신 5월은 일수가 31일입니다.");
+            break;
+            case '6':
+            alert("입력하신 6월은 일수가 30일입니다.");
+            break;
+            case '7':
+            alert("입력하신 7월은 일수가 31일입니다.");
+            break;
+            case '8':
+            alert("입력하신 8월은 일수가 31일입니다.");
+            break;
+            case '9':
+            alert("입력하신 9월은 일수가 30일입니다.");
+            break;
+            case '10':
+            alert("입력하신 10월은 일수가 31일입니다.");
+            break;
+            case '11':
+            alert("입력하신 11월은 일수가 30일입니다.");
+            break;
+            case '12':
+            alert("입력하신 12월은 일수가 31일입니다.");
+            break;
+        }
+    </script>
+</body>
+</html>
