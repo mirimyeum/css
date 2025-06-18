@@ -4,6 +4,10 @@ $(function(){
     autoplay: true,
 
     // fadeInFadeout 슬라이드 속도설정
-    fade: true
+    fade: true,
+
+    // 페이지버튼 보이게하기
+    dots: true
+
   });
   })

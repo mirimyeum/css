@@ -139,3 +139,27 @@ main .slider .slick-next{
     width: 18px;
     height: 30px;
 }
+
+/* 페이지버튼 변경 */
+main .slider ul.slick-dots{
+    /* border: 1px solid red; */
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    bottom: 25px;
+    gap: 8px;
+}
+/* 12345678 대신에 원으로 변경 */
+main .slider ul.slick-dots li button{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 100%;
+    text-indent: -99999px;
+}
+/* 활성화된 class의 버튼 슬라이드를 변경 */
+main .slider ul.slick-dots li.slick-active button{
+    background: #f9b233;
+}
