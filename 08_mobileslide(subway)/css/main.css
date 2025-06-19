@@ -80,7 +80,7 @@ li{list-style: none;}
 
 /* 페이지버튼을 숫자로 표시변경 */
  .main .swiper .swiper-pagination{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 48px;
     height: 22px;
     background: rgba(0, 0, 0, 0.3);
