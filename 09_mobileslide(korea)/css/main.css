@@ -11,25 +11,22 @@ button{background: none; border: none; cursor: pointer;}
     width: 100%;
     height: 51px;
     border-bottom: 1px solid #e1e1e1;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
 }
-.header h1{
+
+.header h1 {
     width: 451px;
     height: 51px;
-    position: relative;
-}
-.header h1 a{
+    display: block;
     width: 145px;
     height: 45px;
-    background: url(../images/logo_mo.jpg) no-repeat;
+    background: url(../images/logo_mo.jpg) no-repeat center;
     background-size: 145px 45px;
     text-indent: -99999px; 
-    display: block;
-    position: absolute;
-    top: 50%;
-    margin-top: -22.5px;
-    left: 50%;
-    margin-left: -52.5px;
+   
 }
 
 .header .m_menu{
@@ -38,9 +35,6 @@ button{background: none; border: none; cursor: pointer;}
     text-indent: -99999px;
     background: url(../images/btn_memu.jpg) no-repeat;
     background-size: 44px 48.5px;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .header .m_search{
@@ -49,9 +43,6 @@ button{background: none; border: none; cursor: pointer;}
     text-indent: -99999px;
     background: url(../images/icon_search_mo.jpg) no-repeat;
     background-size: 44px 48.5px;
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 /* .main .visual{
@@ -81,7 +72,7 @@ button{background: none; border: none; cursor: pointer;}
     height: 22px;
     position: absolute;
     left: unset;
-    right: 15px;
+    right: 30px;
     top: 15px;
     color: rgb(255, 255, 255);
     font-size: 14px;
