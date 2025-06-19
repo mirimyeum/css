@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문응용</title>
+</head>
+<body>
+    <!-- 각각의 html코딩이용 -->
+    <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+        <li>메뉴6</li>
+        <li>메뉴7</li>
+        <li>메뉴8</li>
+        <li>메뉴9</li>
+        <li>메뉴10</li>
+    </ul>
+
+    <hr>
+
+    <script>
+        // 반복문이용
+        let list = "<ul>";
+        for(let i=1; i<=10; i++){
+           list = list +"<li>메뉴" + i + "</li>"; 
+        }
+        list = list + "</ul>";
+        // alert(list)
+
+        document.write(list)
+
+
+
+
+    </script>
+</body>
+</html>
