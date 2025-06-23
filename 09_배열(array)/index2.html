@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트배열</title>
+</head>
+<body>
+    <script>
+        let fruit = ["바나나", "포도", "수박"];
+        let day = ["월", "화", "수", "목", "금", "토", "일"];
+
+       document.write("올해의 제철 과일은 " + fruit + " 입니다!<br>");
+       document.write("오늘의 추천 과일은 " + fruit[2] + " 입니다!");
+       document.write("<h2>일주일 요일</h2>");
+       document.write("오늘은 " + day[0] + "요일 입니다!<br>");
+    
+        // 반복문을 사용X
+        document.write(day[0] + "요일<br>");
+        document.write(day[1] + "요일<br>");
+        document.write(day[2] + "요일<br>");
+        document.write(day[3] + "요일<br>");
+        document.write(day[4] + "요일<br>");
+        document.write(day[5] + "요일<br>");
+        document.write(day[6] + "요일<br>");
+
+        document.write("<hr>");
+    
+        // 반복문 사용
+        for(let i=0; i<=6; i++){
+            document.write(day[i] + "요일<br>");
+        }
+
+    </script>
+</body>
+</html>

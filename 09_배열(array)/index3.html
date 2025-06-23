@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트배열 응용</title>
+</head>
+<body>
+    
+    <script>
+//  1. 소녀시대 멤버를 배열에 기억시켜서 출력하는 프로그램
+// 2. 소녀새대의 멤버는 00 입니다.
+// 3. 수평선 출력
+// 4. 반복문을 이용해서 출력
+
+let group = ["태연", "써니", "티파니", "효연", "유리", "수영", "윤아", "서현"];
+
+// 반복문X
+document.write("소녀시대의 멤버는 " + group[0] + "입니다.<br>");
+document.write("소녀시대의 멤버는 " + group[1] + "입니다.<br>");
+document.write("소녀시대의 멤버는 " + group[2] + "입니다.<br>");
+document.write("소녀시대의 멤버는 " + group[3] + "입니다.<br>");
+document.write("소녀시대의 멤버는 " + group[4] + "입니다.<br>");
+document.write("소녀시대의 멤버는 " + group[5] + "입니다.<br>");
+document.write("소녀시대의 멤버는 " + group[6] + "입니다.<br>");
+document.write("소녀시대의 멤버는 " + group[7] + "입니다.<br>");
+
+document.write("<hr>");
+
+// 반복문 사용
+for(let i=0; i<=7; i++){
+    document.write("소녀시대의 멤버는 " + group[i] + "입니다.<br>")
+}
+    </script>
+</body>
+</html>
