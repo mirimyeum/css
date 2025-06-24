@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트객체data 응용</title>
+</head>
+<body>
+    <script>
+        // 학원시간표 객체 만들기
+        // schdule
+        // 월,화,수요일 -> 1교시 html 2교시 css
+        // 화요일 -> 1교시 javascript 2교시 jquery
+        // 수요일 -> 1교시 작품집 2교시 포트폴리오
+        // document로 출력
+
+        let schdule = {
+            Monday:{
+                class1:"1교시: " + "html",
+                class2:"2교시: " + "css"
+            },
+            Tuesday:{
+                class1:"1교시: " + "javascript",
+                class2:"2교시: " +"jquery"
+            },
+            Wednesday:{
+                class1:"1교시: " + "작품집",
+                class2:"2교시: " + "포트폴리오"
+            }
+        }
+        document.write("<h3>월요일</h3> " + schdule.Monday.class1 + "<br>" + schdule.Monday.class2); 
+        document.write("<h3>화요일</h3> " + schdule.Tuesday.class1 + "<br>" + schdule.Tuesday.class2); 
+        document.write("<h3>수요일</h3> " + schdule.Wednesday.class1 + "<br>" + schdule.Wednesday.class2); 
+    </script>
+</body>
+</html>
