@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+  font-family: "Noto Sans KR", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+img{
+    border: none;
+    display: block;
+}
+
+/* 메뉴를 포함한 헤더영역을 모두 감싸는 부모페이지 */
+#header_wrap{
+    width: 100%;
+    /* height: 380px; */
+    height: 110px;
+    background: #fff;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 110px;
+    /* background: pink; */
+    border-bottom: 1px solid #ECECEC;
+}
+/* inner */
+header .inner{
+    width: 1140px;
+    height: 100%;
+    /* background: gold; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .inner h1 a{
+    display: block;
+    width: 186px;
+    height: 47px;
+    background: url(../images/logo_w186.png) no-repeat;
+    left: 0;
+    top: 0;
+    text-indent: -99999px;
+}
+/* ul.gnb */
+header .inner ul.gnb{
+    display: flex;
+    gap: 85px;
+}
+header .inner ul.gnb>li{
+    /* border: 1px solid red; */
+    position: relative;
+}
+header .inner ul.gnb>li>a{
+    display: block;
+    line-height: 67px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+    position: relative;
+    /* border: 1px solid blue; */
+}
+/* header .inner ul.gnb li:hover a{
+    border-bottom: 4px solid #fc6b00;
+} */
+/* 구분선을 공중에 띄어 배치 -> 메뉴바가 흔들리지 않기위해 */
+header .inner ul.gnb>li>a::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #fc6b00;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+header .inner ul.gnb>li:hover>a::after{
+    display: block;
+}
+/* 2단메뉴 -> 모두 공중에 위치*/
+header .inner ul.gnb>li>ul.depth2{
+   width: 100px;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 88px;
+   /* border: 1px solid red; */
+   display: none;
+
+}
+header .inner ul.gnb>li>ul.depth2 li{
+    width: 100%;
+    line-height: 38px;
+    text-align: center;
+}
+header .inner ul.gnb>li>ul.depth2 li a{
+    font-size: 15px;
+    font-weight: 400;
+    color: #867d77;
+    letter-spacing: -1px;
+}
+header .inner ul.gnb>li>ul.depth2 li:hover a{
+    color: #000;
+}
