@@ -31,6 +31,18 @@
         document.write("<h3>월요일</h3> " + schdule.Monday.class1 + "<br>" + schdule.Monday.class2); 
         document.write("<h3>화요일</h3> " + schdule.Tuesday.class1 + "<br>" + schdule.Tuesday.class2); 
         document.write("<h3>수요일</h3> " + schdule.Wednesday.class1 + "<br>" + schdule.Wednesday.class2); 
+        document.write( "<hr>"); 
     </script>
+
+    <!-- 반복문 사용 -->
+     <script>
+        for(let key in schdule){
+            document.write("<h3>" + key + "<h3>")
+                for(let time in schdule[key]){
+                    document.write("time" + ":" + schdule[key][time] + "<br>")
+                }
+        }
+
+     </script>
 </body>
 </html>

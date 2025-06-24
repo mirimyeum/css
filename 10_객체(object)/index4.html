@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문(for in)응용</title>
+</head>
+<body>
+    <script>
+        // 배열사용
+        let book = ["소년이 온다", "13,600원", "한강", "2024년12월12일", "216페이지"];
+        
+        document.write("책제목:" + book[0] + "<br>");
+        document.write("가격:" + book[1] + "<br>");
+        document.write("저자:" + book[2] + "<br>");
+        document.write("출간일:" + book[3] + "<br>");
+        document.write("책제목:" + book[4] + "<br>");
+
+        document.write("<hr>");
+
+        // 객체사용
+        let book2 = {
+            "책제목": "소년이온다",
+            "가격": "13,600원",
+            "저자": "한강",
+            "출간일": "2024년12월12일",
+            "페이지수": "216페이지"
+        }
+
+        document.write("책제목:" + book2["title"] + "<br>");
+        document.write("가격:" + book2["price"] + "<br>");
+        document.write("저자:" + book2["author"] + "<br>");
+        document.write("줄간일:" + book2["date"] + "<br>");
+        document.write("페이지수:" + book2["page"] + "<br>");
+
+        document.write("<hr>");
+        
+        // 객체의 반복문
+        for(let key in book2){
+            document.write(key + ":" + book2[key] + "<br>");
+        }
+    </script>
+</body>
+</html>
