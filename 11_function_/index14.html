@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 홀쭉 체중 43.52, 키 160 -->
+     <!-- 코린 61.25 175 -->
+      <!-- 통통 77.76 180 -->
+
+    <script>
+//       function people(name,score){
+//         document.write(`${name}님의 체질량수는 ${score}입니다.<br>`)
+//     }  
+//     people("홀쭉이",17)
+//     people("코린이",20)
+//     people("통통이",24)
+    
+
+//     function score(name2,price){
+  //      return `${name2} ${price}원 입니다.<br>`;
+  //   }  
+  
+  //   document.write(score("맡긴 금약은",3650000));
+  //   document.write(score("이자는",146000));
+  //   document.write(score("최종 받을 금액은",3796000)
+  // );
+  
+  
+  function bimcalgulator(name, weight,height){
+    let hap = weight/(height*height/10000)
+    document.write(`${name}님의 체질량지수는 ${hap}입니다<br>`)
+  };
+  bimcalgulator("홀쭉이",43.52,160);
+  bimcalgulator("코린이",61.25,175);
+  bimcalgulator("통통이",77.76,180);
+  
+  document.write("<hr>")
+
+    let amount = 3650000;
+    // let year = 1;
+    // let rate = 4;
+  
+    // 함수 이자액을 계산하는 함수
+    function interestCalculator(amount,year,rate){
+      let sum = amount*year*rate/100
+      return sum;
+    }
+    document.write(`맡긴금액은 ${amount}원 입니다<br>`)
+    document.write(`이자는 ${interestCalculator(3650000,1,4)}원 입니다<br>`)
+    document.write(`최종 받을 금액은 ${amount + interestCalculator(3650000,1,4)}원 입니다<br>`)
+    
+    </script>
+    
+    
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수매개변수</title>
+</head>
+<body>
+    <script>
+        // 값을 주지않고 기본값으로 설정할때
+        // function friend(name="친구"){
+        //     alert(`안녕, ${name}!!`)
+        // }
+
+        // friend(`홍길동`);
+        // friend();
+
+        // 문제
+        function order(burger,drink="콜라"){
+            document.write(`주문하신 ${burger},${drink} 세트메뉴가 나왔습니다<br>`)
+
+        }
+        order("치즈버거")
+        order("치킨버거", "아메리카노")
+        order("새우버거")
+    </script>
+</body>
+</html>
