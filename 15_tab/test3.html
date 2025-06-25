@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eq함수</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+     <ul>
+        <li>사과</li>
+        <li>딸기</li>
+        <li>바나나</li>
+        <li>수박</li>
+    </ul>
+
+    <script>
+        $(function(){
+            $("ul li").eq(0).css({"color":"red"})
+            $("ul li").eq(3).css({"border":"1px solid blue"})
+            $("ul li").eq(1).css({"font-size":36})
+            $("ul li").eq(2).css({"background":"black", "color":"white"})
+            
+        })
+    </script>
+</body>
+</html>
