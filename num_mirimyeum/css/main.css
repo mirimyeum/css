@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+body {
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+    /* 기본 공통 스타일은 body문에 저장 */
+    color: #333;
+    background: #fff;
+}
+
+/* 초기화 작업 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+/* 어두운 커버 영역 */
+.cover{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    /* 팝업창을 클릭했을때 배경이 어두워져야하기에 숨김처리 */
+    display: none;
+}
+
+/* 팝업창 */
+.popup{
+    width: 400px;
+    height: 400px;
+    background: #FF9800;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    /* 공지사항 클릭시 보여야 되는 창이기에 숨김처리 */
+    display: none;
+}
+.popup h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.popup p{
+    font-size: 14px;
+}
+
+.popup .btn_close{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #fff;
+    padding: 6px;
+}
+
+/* 전체페이지 */
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 헤더 */
+header {
+    width: 1200px;
+    height: 100px;
+    /* background: aqua; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+/* 헤더와 이단메뉴 전체 영역 */
+.gnbbg{
+    width: 100%;
+    height: 111px;
+    background: #F44336;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 40;
+    display: none;
+}
+/* 헤더 메인메뉴 */
+header nav ul.gnb {
+    width: 600px;
+    height: 49px;
+    display: flex;
+    /* background: darkkhaki; */
+}
+
+header nav ul.gnb>li {
+    width: 150px;
+    height: 100%;
+    /* background: fuchsia; */
+    position: relative;
+
+}
+
+header nav ul.gnb>li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+
+header nav ul.gnb>li:hover a {
+    background: #F44336;
+    color: #fff;
+}
+
+/* 2차메뉴 */
+header nav ul.gnb>li>.depth2{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    /* 2차메뉴 항상 레이어순서 올리기 */
+    z-index: 50;
+    /* 나중에 보이기위해 숨김 */
+    display: none;
+}
+header nav ul.gnb>li>.depth2 li{
+    width: 100%;
+}
+header nav ul.gnb>li>.depth2 li a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    /* background: pink; */
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+header nav ul.gnb>li>.depth2 li:hover a{
+    background: #fff;
+    color: #F44336;
+}
+
+/* 메인 */
+main {
+    width: 1200px;
+    height: 300px;
+    /* background: burlywood; */
+    margin: 0 auto;
+}
+
+/* 메인 이미지 슬라이드 */
+
+/* 컨텐츠 박스 */
+.contents {
+    width: 1200px;
+    height: 200px;
+    /* background: chartreuse; */
+    margin: 0 auto;
+    display: flex;
+}
+
+/* 공지사항 notice */
+.contents .notice{
+    width: 400px;
+    height: 200px;
+    /* background: orange; */
+    padding: 10px;
+}
+.contents .notice ul.list{
+    width: 100%;
+    height: 130px;
+    /* background: pink; */
+}
+.contents .notice ul.list li{
+    width: 100%;
+    height: 26px;
+    /* border: 1px solid red;  */
+    line-height: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+.contents .notice ul.list li a{
+    color: #333;
+}
+
+
+/* 갤러리 gallery */
+.contents .gallery{
+    width: 400px;
+    height: 200px;
+    /* background: palevioletred; */
+    padding: 10px;
+}
+.contents .gallery ul.photo{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contents .gallery ul.photo li a img{
+    transition: all 0.3s ease-in-out;
+}
+.contents .gallery ul.photo li:hover a img{
+    opacity: 0.5;
+}
+/* 공지사항과 갤러리, 바로가기 타이틀 디자인 동일 */
+.contents .notice h2,
+.contents .gallery h2,
+.contents .link h2{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    /* background: yellow; */
+    border-bottom: 1px solid #FF9800;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* 바로가기 link */
+.contents .link{
+    width: 400px;
+    height: 200px;
+    /* background: yellowgreen; */
+    padding: 10px;
+    background: url(../images/link.png) no-repeat center;
+    /* border: 1px solid red; */
+}
+.contents .link h2{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.contents .link p{
+    color: #fff;
+    line-height: 24px;
+    text-shadow: 2px 2px 2px #000;
+    padding-left: 10px;
+}
+.contents .link a{
+    display: block;
+    width: 100px;
+    height: 30px;
+    color: #333;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+    background: #fff;
+}
+
+/* 푸터 */
+footer {
+    width: 1200px;
+    height: 100px;
+    /* background: darkcyan; */
+    margin: 0 auto;
+    display: flex;
+    border-top: 1px solid #F44336;
+}
+footer .fwrap{
+    width: 1000px;
+    height: 100px;
+    /* background: rebeccapurple; */
+} 
+
+footer .fwrap .fnav {
+    width: 100%;
+    height: 50%;
+    /* background: pink; */
+}
+
+footer .fwrap .fnav ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+footer .fwrap .fnav ul li a{
+    font-size: 12px;
+    color: #333;
+    font-weight: 700;
+}
+footer .fwrap p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+}
+
+/* 경계선 삽입 규칙 */
+footer .fwrap .fnav ul li{
+    position: relative;
+}
+footer .fwrap .fnav ul li::after{
+    
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #333;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer .fwrap .fnav ul li:first-child::after{
+    display: none;
+}
+
+/* 패밀리 사이트 */
+footer .family{
+    width: 200px;
+    height: 100px;
+    /* background: gold; */
+    position: relative;
+}
+
+footer .family .fm{
+    width: 200px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #333;
+    text-align: left;
+    text-indent: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+footer .family .fm::after{
+    content: '▼';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer .family ul{
+    position: absolute;
+    left: 0;
+    bottom: 79px;
+    width: 200px;
+    /* 내용만큼이라 높이 주면 안됨 */
+    background: #fff;
+    border: 1px solid #333;
+    text-indent: 20px;
+    /* 클릭할때만 보이는 패밀리사이트 숨김 */
+    display: none;
+}
+footer .family ul li{
+    line-height: 24px;
+}
+footer .family ul li a{
+    font-size: 12px;
+    color: #333;
+}
+footer .family ul li:hover{
+    background: #FF9800;
+}
+footer .family ul li:hover a{
+    color: #fff;
+}
