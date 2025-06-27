@@ -1,0 +1,374 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕", "malgun gothic", sans-serif;
+    color: #333;
+    background: #fff;
+}
+/* 초기화 작업 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+img{
+    border: none;
+    display: block;
+}
+
+/* 와이어프레임 작업 */
+
+/* 팝업창 클릭시 배경영역 */
+.cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+    /* 공지사항 클릭시 배경보이기 위해 숨김 */
+    display: none;
+}
+/* 팝업창 영역 */
+.popup{
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #4CAF50;
+    color: #333;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-30%);
+    z-index: 100;
+    /* 공지사항 클릭시 보이기 위해 숨김처리 */
+    display: none;
+}
+.popup h2{
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px 0 50px 0;
+    color: #1B5E20;
+}
+.popup p{
+    font-size: 14px;
+    text-align: center;
+}
+.popup .close{
+    background: #4CAF50;
+    padding: 6px 8px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+}
+
+/* 메인메뉴와 서브메뉴 묶음 */
+.mainsub{
+    width: 1200px;
+    height: 150px;
+    background: #1B5E20;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    z-index: 97;
+    /* 상단메뉴 hover시 보이기 위해 숨김 */
+    display: none;
+}
+
+/* 헤더 영역 */
+header{
+    width: 1200px;
+    height: 100px;
+    background: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 96;
+}
+header ul.gnb{
+    display: flex;
+    /* background: yellow; */
+}
+header ul.gnb>li{
+    width: 150px;
+    height: 50px;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+}
+header ul.gnb>li>a{
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+header ul.gnb>li:hover{
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background: #1B5E20;
+}
+header ul.gnb>li:hover>a{
+    color: #fff;
+}
+
+/* 서브메뉴 depth2 */
+header ul.gnb>li>.depth2{
+    width: 100%;
+    /* background: pink; */
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 98;
+    /* 마우스 갖다댈때를 위해 숨김처리 */
+    display: none;
+}
+header ul.gnb>li>.depth2 li:hover{
+    background: #4CAF50;
+}
+header ul.gnb>li>.depth2 li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 메인 이미지 슬라이드 영역 */
+main{
+    width: 1200px;
+    height: 300px;
+    /* background: blueviolet; */
+    margin: auto;
+}
+
+/* 컨텐츠 영역 */
+.contents{
+    width: 1200px;
+    height: 200px;
+    /* background: chocolate; */
+    margin: auto;
+    display: flex;
+}
+/* 컨텐츠 h2의 동일한 스타일 */
+.contents .notice h2,
+.contents .gallery h2{
+    font-size: 16px;
+    color: #1B5E20;
+    border-bottom: 1px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+/* 컨텐츠의 공지사항 영역 */
+.contents .notice{
+    width: 400px;
+    height: 200px;
+    /* background: fuchsia; */
+    padding: 10px;
+}
+.contents .notice ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 36px;
+}
+.contents .notice ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+.contents .notice ul li p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* 컨텐츠의 갤러리 영역 */
+.contents .gallery{
+    width: 400px;
+    height: 200px;
+    /* background: skyblue; */
+    padding: 10px;
+}
+.contents .gallery ul{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contents .gallery ul li:hover a{
+    opacity: 0.5;
+}
+
+/* 컨텐츠의 배너 영역 */
+.contents .banner{
+    width: 400px;
+    height: 200px;
+    /* background: olivedrab; */
+    padding: 10px;
+    background: url(../images/banner.png) no-repeat center ;
+    position: relative;
+}
+.contents .banner h2{
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    margin-top: 60px;
+    font-weight: 900;
+}
+.contents .banner .go{
+    width: 100px;
+    height: 35px;
+    background: #1B5E20;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-65%);
+}
+.contents .banner .go:hover{
+    background: #4CAF50;
+}
+
+/* 푸터 영역 */
+footer{
+    width: 1200px;
+    height: 100px;
+    background: #f5f5f5;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+/* 푸터 로고 */
+footer h1{
+    filter: grayscale(1);
+}
+/* 푸터 메뉴바 및 정보 */
+footer .lists{
+    width: 800px;
+    height: 100px;
+    /* background: skyblue; */  
+}
+footer .lists ul.menu{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+/* 하단메뉴에 경계선 삽입 */
+footer .lists ul.menu li::after{
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #333;
+    position: absolute;
+    left: -11px;
+    top: 6px;
+}
+footer .lists ul.menu li{
+    position: relative;
+}
+footer .lists ul.menu li:first-child::after{
+    display: none;
+}
+
+footer .lists ul.menu li a{
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;  
+}
+footer .lists p{
+    font-size: 12px;
+    
+    text-align: center;
+    /* border: 1px solid red; */
+    font-weight: 500;
+    color: #333;
+}
+footer .lists ul.info{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+footer .lists ul.info li{
+    font-size: 12px;
+    font-weight: 500;
+    color: #333;
+}
+/* 푸터 패밀리사이트 */
+footer .family{
+    width: 200px;
+    height: 100px;
+    /* background: pink; */
+    line-height: 100px;
+    position: relative;
+}
+footer .family button{
+    width: 200px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #1B5E20;
+    text-align: left;
+    text-indent: 10px;
+    padding-right: 10px;
+}
+footer .family span{
+    margin-left: 87px;
+}
+footer .family ul.lists{
+    width: 200px;
+    height: 120px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 68px;
+    text-indent: 10px;
+    border: 1px solid #333;
+    /* 클릭시 보이기 위해 숨김처리 */
+    display: none;
+}
+footer .family ul.lists li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+footer .family ul.lists li a{
+    font-size: 12px;
+    color: #333;
+    font-weight: 500;
+}
+footer .family ul.lists li:hover{
+    background: #1B5E20;
+}
+footer .family ul.lists li:hover a{
+    color: #fff;
+}
