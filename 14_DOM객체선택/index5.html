@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM객체선택명령</title>
+</head>
+<body>
+    <ul>
+        <li>빨</li>
+        <li>주</li>
+        <li>노</li>
+        <li>초</li>
+        <li>파</li>
+        <li>남</li>
+        <li>보</li>
+    </ul>
+
+    <script>
+        // 문서객체선택시 요소하나만 선택 -> querySelect()
+        // 문서객체선택시 li 요소 모두 선택
+        let rainbow = document.querySelectorAll("ul li");
+        console.log(rainbow);
+        // 각각 한요소씩 스타일할때
+        rainbow[0].style.color="yellow";
+        rainbow[0].style.fontSize="48px";
+        rainbow[1].style.color="yellow";
+        rainbow[1].style.fontSize="48px";
+        rainbow[2].style.color="yellow";
+        rainbow[2].style.fontSize="48px";
+        rainbow[3].style.color="yellow";
+        rainbow[3].style.fontSize="48px";
+        rainbow[4].style.color="yellow";
+        rainbow[4].style.fontSize="48px";
+        rainbow[5].style.color="yellow";
+        rainbow[5].style.fontSize="48px";
+        rainbow[6].style.color="yellow";
+        rainbow[6].style.fontSize="48px";
+
+        // 반목문 활용으로 요소모두를 스타일할때
+        for(let i=0;i<rainbow.length;i++){
+             rainbow[i].style.color="red";
+             rainbow[i].style.fontSize="48px";
+        }
+        //  li 요소중에서 짝수번째만 배경색을 파랑색으로 설정
+        for(let i=0;i<rainbow.length;i++){
+            if(i%2==0){
+                rainbow[i].style.background="blue";
+            }else{
+                rainbow[i].style.background="yellow";
+            }
+        }
+    </script>
+</body>
+</html>
