@@ -1,0 +1,158 @@
+@charset "utf-8";
+body{
+     font-family: "맑은 고딕", "malgun gothic", sans-serif;
+}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{border: none;background: none;cursor: pointer;}
+img{border: none;display: block;}
+
+.section{
+    width: 100%;
+}
+.section .inner{
+    width: 1168px;
+    /* background: pink; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section .inner .left{
+    width: 574px;
+    height: 346px;
+    position: relative;
+}
+/* left의 bar */
+.section .inner .left .tit{
+    width: 100%;
+    height: 64px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+    
+}
+/* 경계선 삽입 */
+.section .inner .left .tit h3{
+    position: relative;
+}
+.section .inner .left .tit h3::before{
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.section .inner .left .tit h3:first-child::before{
+    display: none;
+}
+.section .inner .product{
+    width: 574px;
+    height: 346px;
+    background: #f4f4f4;
+    padding: 20px;
+    position: relative;
+}
+.section .inner .product h2{
+    font-size: 21px;
+    color: #333;
+}
+.section .inner .product h2 span{
+    font-size: 32px;
+    font-weight: 900;
+}
+.section .inner .product .line{
+    width: 20px;
+    height: 2px;
+    background: #ec4646;
+    margin: 15px 0;
+}
+/* 상품목록 */
+.section .inner .product ul.list{
+    position: relative;
+}
+.section .inner .product ul.list li{
+    /* width: 240px;
+    height: 166px; */
+    text-align: center;
+}
+/* .section .inner .product ul.list li a{
+
+} */
+.section .inner .product ul.list li a img{
+    border-bottom: 1px solid #ccc;
+}
+.section .inner .product ul.list li a h3{
+    font-size: 15px;
+    color: #333;
+    font-weight: 700;
+    margin-top: 8px;
+}
+.section .inner .product ul.list li a p{
+    font-size: 13px;
+    color: #757575;
+    font-weight: 400;   
+}
+.section .inner .product ul.list li a h4{
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+/* slick-slider의 페이지버튼 custom */
+.section .inner .product ul.list ul.slick-dots{
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    margin-top: -10px;
+    /* position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border: 5px solid red; */
+}
+.section .inner .product ul.list ul.slick-dots button{
+    width: 10px;
+    height: 10px;
+    background: url(../images/btn_rolling_s.png) no-repeat;
+    text-indent: -99999px;
+}
+.section .inner .product ul.list ul.slick-dots li.slick-active button{
+    background: url(../images/btn_rolling_s_on.png) no-repeat;
+}
+
+/* 일시정지 버튼 */
+/* on click 기법 추가 */
+.btn_pause{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: 36px;
+    bottom: 15px;
+    background: url(../images/btn_rolling_s_stop.png) no-repeat;
+    text-indent: -99999px;
+}
+.btn_pause.on{
+    background: url(../images/btn_rolling_s_play.png) no-repeat;
+}
+/* .btn_play{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: 52px;
+    bottom: 15px;
+    background: url(../images/btn_rolling_s_play.png) no-repeat;
+    text-indent: -99999px;
+} */
+
+
