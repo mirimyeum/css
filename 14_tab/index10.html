@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addClass(),removeClass(),toggleClass()</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .txt_red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        addClass("추가할class이름") -> html요소에 cssclass를 프로그램으로 추가하는 함수
+        removeClass("삭제할class이름") -> html요소에 cssclass를 프로그램으로 삭제하는 함수
+        toggleClass("class이름")
+    -->
+        <button class="btn1">글자색변경</button>
+        <button class="btn2">글자색제거</button>
+        <button class="btn3">토글클래스</button>
+
+        <p>안녕하세요</p>
+
+    <script>
+            $(".btn1").click(function(){
+                $("p").addClass("txt_red");
+            })
+
+            $(".btn2").click(function(){
+                $("p").removeClass("txt_red");
+            })
+
+            $(".btn3").click(function(){
+                $("p").toggleClass("txt_red");
+            })
+    </script>
+</body>
+</html>
