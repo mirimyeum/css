@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this함수</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <ul>
+        <li>사과</li>
+        <li>딸기</li>
+        <li>바나나</li>
+        <li>수박</li>
+    </ul>
+
+    <!-- 내부 자바스크립트 -->
+     <script>
+        $(function(){
+            // li를 클릭하면
+            $("ul li").click(function(){
+                // this는 사용자가 선택한 요소를 기억함
+                alert($(this).text())
+            })
+        })
+
+        // 4개의 요소중에서 내가 클릭한 것만 가리킴
+     </script>
+</body>
+</html>
