@@ -1,0 +1,43 @@
+@charset "utf-8";
+body{
+
+}
+button{
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul.box1,
+ul.box2{
+    width: 640px;
+    border: 3px solid #000;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+ul li{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+ul.box1 li:first-child{
+    background: red;
+}
+ul.box1 li:nth-child(2){
+    background: green;
+}
+ul.box2 li:first-child{
+    background: orange;
+}
+ul.box2 li:nth-child(2){
+    background: blue;
+}
