@@ -1,0 +1,155 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Pretendard-Regular", "Inter", sans-serif;
+}
+/* 영문폰트를 적용할때 사용할 css */
+.en{font-family: "Inter", sans-serif;}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{border: none; background: none; cursor: pointer;}
+img{border: none; display: block;}
+
+/* navigation 변경 */
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    color: #fff;
+}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
+    border-radius: 100%;
+}
+/* 공통섹션 스타일 */
+.title{
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1000px;
+}
+/* .inner{
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    background: skyblue;
+} */
+/* 슬라이드 영역 분리 */
+#section0 {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    ;
+}
+
+#section1 {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+#section2 {
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+#section3 {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+#section4 {
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+#section5 {
+    background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+
+#section6 {
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+}
+
+/* header 영역 */
+header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    /* background: #0F172A; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header h1 a{
+    color: #fff;
+}
+header .nav_wrap{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+/* // 메뉴버튼의 .gnb가 안보였다가 */
+header .nav_wrap .gnb{
+    width: 100%;
+    height: 100%;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+/* // 메뉴버튼을 클릭시 .gnb가 나타나게 */
+header.on .nav_wrap .gnb{
+    transform: translateX(0);
+    opacity: 1;
+}
+header .gnb ul{
+    display: flex;
+    gap: 50px;
+}
+header .nav_wrap .gnb ul li a{
+    color: rgba(255,255,255,0.6)
+}
+/* 햄버거 버튼 */
+.m_btn{
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.m_btn span{
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+}
+.m_btn span:nth-child(1){
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
+.m_btn span:nth-child(2){
+    top: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.m_btn span:nth-child(3){
+    top:20px;
+    transition: all 0.5s ease-in-out;
+}
+header.on .m_btn span:nth-child(1){
+    transform: rotate(45deg);
+    top: 10px;
+}
+header.on .m_btn span:nth-child(2){
+    transform: translateX(100%);
+    opacity: 0;
+}
+header.on .m_btn span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 10px;
+}
+#section0,#section1,#section2,#section3,#section4,#section5,#section6{
+    width: 100%;
+    height: 1000px;
+}
