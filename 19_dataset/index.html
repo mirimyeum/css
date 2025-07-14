@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dataset</title>
+</head>
+<body>
+    <!-- dataset -> 개발자가 속성을 임의로 만들어서 사용하고 싶을때 -->
+     <!-- 속성값을 가져올때 Jquery -> attr() -->
+      <!-- 속성값을 가져올때 javascript -> getAttribute() -->
+
+      <!-- 예시 -->
+    <!-- <img(태그명) src(속성)=""(속성값) alt=""> -->
+    <!-- <a(태그명) href(속성)=""(속성값)></a> -->
+
+    <!-- 문법 -->
+     <!-- 
+        <태그명 data-이름-이름></태그명>
+     -->
+    <!-- data뒤의 이름은 소문자로 시작해야함 -->
+
+    <h1 data-index="a">제목태그1</h1>
+    <h1 data-index="b">제목태그2</h1>
+    <h1 data-index="c">제목태그3</h1>
+
+
+    <script>
+        // 문서객체 선택해서 변수 저장 -> 여러개일때는 배열로 들어감
+        let tit = document.getElementsByTagName("h1")
+        console.log(tit)
+
+        for(let i=0;i<tit.length;i++){
+            tit[i].addEventListener("click",function(){
+                let index = this.getAttribute("data-index")
+                alert(index)
+            })
+        }
+
+
+    </script>
+</body>
+</html>
