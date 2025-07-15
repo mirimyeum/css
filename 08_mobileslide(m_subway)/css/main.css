@@ -21,6 +21,43 @@ li{list-style: none;}
     z-index: 10;
     display: none;
 }
+/* 팝업창 */
+.popup{
+    background: #FFC20C;
+    padding: 10px 10px 0;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 900;
+}
+.popup .close form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popup a img{
+    width: 100%;
+    /* 모바일에 최적화된 사이즈 */
+    min-width: 320px;
+}
+.popup .close{
+    height: 30px;
+    position: relative;
+}
+.popup .close #today_close{
+    vertical-align: middle;
+}
+.popup .close label{
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.popup .close .txt_btn{
+    font-size: 12px;
+    color: #000;
+}
 /* 모바일 메뉴 사이드 */
 .m_side_wrap{
     width: calc(100% - 30px);
@@ -581,6 +618,7 @@ position: relative;
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: #000;
 }
 .tabbar .btn_order img{
     width: 28px;
