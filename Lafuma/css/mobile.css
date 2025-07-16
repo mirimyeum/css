@@ -1,0 +1,257 @@
+@media ( min-width:320px ) and ( max-width:767px ){
+    /* 모바일 커버 영역 */
+    .cover{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        display: none;
+    }
+    /* 모바일 메뉴 */
+     /* on 클래스가 추가되지 않았을때 */
+   .m_menu_wrap{
+    display: block;
+    width: calc( 100% - 50px );
+    height: 100%;
+    background: #EEE;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+   }
+   /* on 클래스가 추가됬을때 */
+   .m_menu_wrap.on{
+    left: 0;
+   }
+   .m_menu_wrap h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.9);
+   }
+    .m_menu_wrap h2 a img{
+        width: 100px;
+    }
+      .m_menu_wrap .m_gnb{
+        
+      }
+     .m_menu_wrap .m_gnb>li{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+     }
+     .m_menu_wrap .m_gnb>li>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 15px 0;
+        color: #444;
+     }
+
+     /* 모바일 2차 메뉴 */
+       .m_menu_wrap .m_gnb>li>.depth2{
+        width: 100%;
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+       }
+       .m_menu_wrap .m_gnb>li>.depth2 li{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        position: relative;
+        border-bottom: 1px solid #ccc;
+       }
+        .m_menu_wrap .m_gnb>li>.depth2 li::after{
+            content: '';
+            width: 1px;
+            height: 65px;
+            background: #ccc;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .m_menu_wrap .m_gnb>li>.depth2 li:last-child::after{
+            display: none;
+        }
+       .m_menu_wrap .m_gnb>li>.depth2 li a{
+        display: block;
+        padding: 30px 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #626262;
+       }
+        .m_menu_wrap .m_gnb>li>.depth2 li a span img{
+            width: 14px;
+        }
+    /* 헤더 */
+    header{
+        height: 50px;
+        padding: 0 15px;
+    }
+    header .inner{
+        width: 100%;
+        height: 50px;
+    }
+
+    /* PC주메뉴 숨김 */
+    header .inner ul.gnb{
+        display: none;
+    }
+
+    /* 모바일메뉴 보이게 */
+    .m_btn{
+        display: block;
+        width: 24px;
+        height: 24px;
+        text-indent: -99999px;
+        background: url(../images/m_menu.png) no-repeat;
+        background-size: 24px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    header .inner h1 a{
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    header .inner a.cart{
+        width: 24px;
+        height: 24px;
+        background: url(../images/m_mall.png) no-repeat;
+        background-size: 24px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* 메인 비주얼이미지 */
+    main .swiper .swiper-wrapper .swiper-slide a img{
+        width: 100%;
+    }
+   main p .show{
+    display: block;
+}
+    main p em{
+        display: none;
+    }
+main{
+    padding: 0;
+}
+/* 메인 슬라이드 */
+main .swiper .swiper-button-prev{
+    display: none;
+}
+main .swiper .swiper-button-next{
+    display: none;
+}
+
+/* 텍스트 박스 */
+main .txt {
+    background: #EEE;
+    padding: 0;
+}
+main .txt  h2{
+    background: #fff;
+    margin-bottom: 0;
+    padding: 15px 0;
+
+}
+main .txt p{
+    padding: 15px 0;
+    font-size: 14px;
+    color: #626262;
+    font-weight: 500;
+}
+main .txt p .hidden{
+    display: none;
+}
+
+/* contents 박스 */
+main .content ul.list li:nth-child(1),
+main .content ul.list li:nth-child(2),
+main .content ul.list li:nth-child(3){
+    width: 100%;
+}
+
+main .content ul.list li:nth-child(4),
+main .content ul.list li:nth-child(5){
+    width: 50%;
+}
+
+/* sns list 박스 대신*/
+main .snslive{
+    display: none;
+}
+
+/* 모바일에서 보일 영역 */
+main .m_list{
+    width: 100%;
+    display: block;
+}
+main .m_list li{
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #d8d8d8;
+}
+main .m_list li a{
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #555;
+    position: relative;
+}
+main .m_list li a::after{
+    content: ""; 
+    width: 11px;
+    height: 18px;
+    background: url(../images/m_arrow.gif) no-repeat;
+    background-size: 9px 16px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* border: 1px solid red; */
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background: #EEE;
+    padding-top: 70px;
+}
+footer .inner .f_menu,
+footer .inner .family_box p.site{
+    display: none;
+}
+footer p{
+    text-align: center;
+}
+footer .inner .family_box{
+    position: absolute;
+    top: -40px;
+    left: 57%;
+    transform: translateX(-57%);
+}
+footer .inner .family_box ul.list{
+    left: 0;
+}
+
+}
