@@ -34,5 +34,36 @@ $(function(){
   },
 });
 
+$(function(){
+  $(".content ul.list li").mouseenter(function(){
+    let num = $(this).find("img").attr('src')
+    console.log(num)
+    // 치환
+    let num2 = num.replace('_ot','_ov')
+    console.log(num2)
 
+    $(this).find("img").attr('src',num2)
+  })
+})
+
+$(function(){
+  $(".content ul.list li").mouseleave(function(){
+    let num = $(this).find("img").attr('src')
+    console.log(num)
+    // 치환
+    let num2 = num.replace('_ot','_ov')
+    console.log(num2)
+
+    $(this).find("img").attr('src',num2)
+  })
+})
+
+
+})
+
+$(function(){
+  $('.btn_family').click(function(){
+    $('.family_box .list').slideToggle()
+    $(this).toggleClass("on")
+  })
 })
