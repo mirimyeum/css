@@ -42,6 +42,9 @@ $(function(){
     $(".m_gnb>ul>li>a").removeClass("on");
     $(this).toggleClass("on");
     $(this).next().slideToggle().parent().siblings().find(".depth2").slideUp();
+
+    // $(this).parent().siblings().find("a.on").removeClass('on');
+    // $(this).toggleClass("on")
   });
 
   // 햄버거 버튼 클릭시 m_side_wrap을 left -100%에서 0으로 튀어나오게하기
@@ -122,3 +125,10 @@ $("#today_close, .popup, .close label").click(function(){
 				document.cookie=name+"="+value+expires+"; path=/";
 			}
 })
+
+$(function(){
+  if(location.href.indexOf('login.html') > -1){
+    $('.tabbar .tabnav ul.right_icon li:last-child').addClass('on');
+    $('.tabbar .tabnav ul.left_icon li').removeClass('on');
+  }
+});
