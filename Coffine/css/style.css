@@ -1,0 +1,536 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 헤더와 푸터는 공통 디자인 -> common.css */
+
+/* 팝업창 */
+.popup {
+  width: 100%;
+  height: 90px;
+  position: relative;
+}
+.popup .inner a {
+  display: block;
+  width: 100%;
+  height: 90px;
+  background: url(../images/mi98fTZd30jphbrs_20241126.jpg) no-repeat center;
+  background-size: cover;
+}
+.popup .inner a .btn_close {
+  width: 19px;
+  height: 19px;
+  background: url(../images/btn_top_banner_close.png) no-repeat;
+  position: absolute;
+  left: 50%;
+  margin-left: 470px;
+  top: 10px;
+  /* text-indent: -99999px; */
+}
+
+/* 메인 */
+
+/* 고정된 이미지 */
+main .bannerimg{
+  position: fixed;
+  right: 0;
+  top: 100px;
+  z-index: 100;
+}  
+/* 개설폼화면 */
+main .home_wrap{
+  width: 200px;
+  position: fixed;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+main .home_wrap form{
+  width: 200px;
+  padding: 15px 10px;
+  background: #9463B4;
+  text-align: center;
+}
+main .top{
+  width: 200px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+main .home_wrap form h2{
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+main .home_wrap form h3{
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+main .home_wrap form input[type="text"],
+main .home_wrap form textarea{
+  width: 100%;
+  height: 45px;
+  text-indent: 10px;
+  outline: none;
+  margin-bottom: 10px;
+}
+main .home_wrap form textarea{
+  height: 90px;
+  padding: 10px 0;
+}
+main .home_wrap form .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .home_wrap form .info h4{
+  color: #fff;
+  font-size: 14px;
+}
+main .home_wrap form p{
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+/* 보내기 버튼 */
+main .home_wrap form #btn_send{
+  width: 100%;
+  height: 50px;
+  background: #56257E;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+/* slick slide 메인이미지 */
+main {
+  width: 100%;
+}
+main .slide {
+  width: 100%;
+  height: 620px;
+}
+main .slide div {
+  width: 100%;
+  height: 100%;
+}
+main .slide div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main .slide div.slide1 a {
+  background: url(../images/8YyVQIrODNJExkM9_20240405.jpg) no-repeat center top;
+  background-size: cover;
+}
+main .slide div.slide2 a {
+  background: url(../images/A0qi1eb9wvEGxnmX_20230719.jpg) no-repeat center top;
+  background-size: cover;
+}
+main .slide div.slide3 a {
+  background: url(../images/krH2CMoaZQ6pOEjJ_20241126.jpg) no-repeat center top;
+  background-size: cover;
+}
+main .slide div.slide4 a {
+  background: url(../images/m4uE1HFDqbY8tval_20230719.jpg) no-repeat center top;
+  background-size: cover;
+}
+main .slide div.slide5 a {
+  background: url(../images/sMkbYCLarlo0f7Ow_20160204.jpg) no-repeat center top;
+  background-size: cover;
+}
+main .slide div.slide6 a {
+  background: url(../images/boO8MUInqa6CPQcJ_20230925.png) no-repeat center top;
+  background-size: cover;
+}
+/* 좌우버튼 커스텀마이징 */
+main .slide .slick-prev {
+  width: 45px;
+  height: 89px;
+  background: url(../images/main_visual_prev.png) no-repeat;
+  text-indent: -99999px;
+  position: absolute;
+  left: 50%;
+  margin-left: -550px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+main .slide .slick-next {
+  width: 45px;
+  height: 89px;
+  background: url(../images/main_visual_next.png) no-repeat;
+  text-indent: -99999px;
+  position: absolute;
+  right: 50%;
+  margin-right: -550px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+/* 페이지 버튼 커스텀마이징*/
+main .slide ul.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  display: flex;
+  gap: 5px;
+}
+main .slide ul.slick-dots li button {
+  width: 18px;
+  height: 18px;
+  background: url(../images/main_visual_pager_off.png) no-repeat;
+  text-indent: -99999px;
+}
+/* 활성화된 페이지 버튼 */
+main .slide ul.slick-dots li.slick-active button {
+  background: url(../images/main_visual_pager_on.png) no-repeat;
+}
+
+/* 섹션 1 */
+main #section1 {
+  width: 1000px;
+  margin: auto;
+  padding-top: 60px;
+}
+main #section1 .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #section1 .inner .mall,
+main #section1 .inner .find {
+  width: 270px;
+  height: 416px;
+  text-align: center;
+}
+main #section1 .inner .mall h2,
+main #section1 .inner .find h2 {
+  font-size: 30px;
+  color: #333;
+}
+main #section1 .inner .mall p,
+main #section1 .inner .find p {
+  font-size: 13px;
+  color: #565656;
+  margin: 20px 0;
+}
+/* 초기화 작업때 이미지 block해 놓은것 다시 수정 */
+img {
+  display: inline-block;
+}
+
+/* 섹션 2 */
+main #section2 {
+  width: 100%;
+  background: #f5f1e8;
+  margin: auto;
+}
+main #section2 .inner {
+  width: 1000px;
+  background: #f5f1e8;
+  margin: 0 auto;
+  padding: 50px 0 94px;
+}
+main #section2 .inner h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #454545;
+  text-align: center;
+  background: url(../images/main_menu_title_line.png) no-repeat 0 center;
+  margin-bottom: 50px;
+}
+main #section2 .inner h2 span {
+  font-weight: lighter;
+}
+main #section2 .inner .product_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+/* 좌측박스(new) */
+/* main #section2 .inner .product_wrap .new{
+    
+} */
+/* 우측박스(best) */
+main #section2 .inner .product_wrap .best ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 420px;
+  /* background: pink; */
+}
+main #section2 .inner .product_wrap .best ul li {
+  width: 205px;
+  height: 242px;
+  background: #fff;
+  text-align: center;
+  position: relative;
+}
+main #section2 .inner .product_wrap .best ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* li hover시 공중에 띄운 테두리 보임처림 */
+main #section2 .inner .product_wrap .best ul li::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 5px solid transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+main #section2 .inner .product_wrap .best ul li:hover::after {
+  border: 5px solid #ffb10f;
+}
+main #section2 .inner .product_wrap .best ul li a img.productimg {
+  width: 173px;
+  margin-bottom: 15px;
+}
+main #section2 .inner .product_wrap .best ul li a img.newicon {
+  width: 34px;
+  height: 33px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+main #section2 .inner .product_wrap .best ul li a h3 {
+  color: #5c5c5c;
+  font-size: 16px;
+  font-weight: bold;
+}
+main #section2 .inner .product_wrap .best ul li a h4 {
+  font-size: 14px;
+  color: #969696;
+  font-weight: bold;
+}
+/* 섹션 3 */
+main #section3 {
+  width: 100%;
+  background: #413332;
+  padding: 54px 0;
+  box-sizing: border-box;
+}
+main #section3 .inner {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+main #section3 .inner .txt h2 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: lighter;
+}
+main #section3 .inner .txt h2 span {
+  font-weight: bold;
+}
+main #section3 .inner .txt p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 15px 0;
+}
+main #section3 .inner .txt a.more {
+  color: #fff;
+  font-size: 12px;
+  background: #1b1b1b;
+  padding: 8px 10px;
+}
+main #section3 .inner img.banner {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+}
+/* 섹션 4 */
+main #section4 {
+  width: 100%;
+  padding: 80px 0;
+  background: #fff;
+}
+main #section4 .inner {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* 좌측박스 */
+main #section4 .inner .bannerslide {
+  width: 250px;
+  height: 410px;
+  position: relative;
+}
+/* 페이지 버튼 생성 */
+main #section4 .inner .bannerslide ul.slick-dots {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+}
+/* 비활성화 페이지 버튼 */
+main #section4 .inner .bannerslide ul.slick-dots li button {
+  width: 15px;
+  height: 15px;
+  background: #8f8e96;
+  border-radius: 100%;
+  text-indent: -99999px;
+}
+/* 활성화 페이지 버튼 */
+main #section4 .inner .bannerslide ul.slick-dots li.slick-active button {
+  background: #9564b5;
+}
+/* 중간박스 */
+main #section4 .inner .box_wrap {
+  width: 271px;
+  height: 410px;
+}
+main #section4 .inner .box_wrap .social,
+main #section4 .inner .box_wrap .recruit {
+  width: 100%;
+  height: 205px;
+  background: #6c5648 url(../images/btn_main_article_type1.png) no-repeat 219px
+    30px;
+}
+/* 공통 디자인은 통합 */
+main #section4 .inner .box_wrap .social a,
+main #section4 .inner .box_wrap .recruit a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+main #section4 .inner .box_wrap .social a h2,
+main #section4 .inner .box_wrap .recruit a h2 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+main #section4 .inner .box_wrap .social a p,
+main #section4 .inner .box_wrap .recruit a p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: -0.8px;
+}
+/* 공통부분중에서 다른 디자인은 별개로 추가 */
+main #section4 .inner .box_wrap .recruit {
+  background: #f7f7f7 url(../images/btn_main_article_type2.png) no-repeat 219px
+    30px;
+}
+main #section4 .inner .box_wrap .recruit a h2 {
+  color: #555;
+}
+main #section4 .inner .box_wrap .recruit a p {
+  color: #777;
+}
+/* 우측박스 */
+main #section4 .inner .banner {
+  width: 479px;
+  height: 409px;
+  position: relative;
+}
+main #section4 .inner .banner .franchise {
+  width: 250px;
+  height: 205px;
+  background: #424242 url(../images/btn_main_article_type2.png) no-repeat 199px
+    30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+main #section4 .inner .banner .franchise a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 33px;
+}
+main #section4 .inner .banner .franchise a h2 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+main #section4 .inner .banner .franchise a p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: -1.5px;
+  text-align: justify;
+}
+/* 섹션 5 tabbar */
+#section5{
+  width: 100%;
+  /* height: 190px; */
+  padding: 60px;
+  background: #f1f1f1;
+}
+#section5 .inner{
+  width: 1000px;
+  height: 100%;  
+  margin: 0 auto;
+}
+#section5 .inner ul.tab{
+  width: 100%;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #555;
+  box-sizing: border-box;
+  gap: 2px;
+}
+#section5 .inner ul.tab li{
+  width: 240px;
+}
+#section5 .inner ul.tab li:nth-child(2),
+#section5 .inner ul.tab li:nth-child(3),
+#section5 .inner ul.tab li:nth-child(4){
+  margin-left: -4px;
+}
+#section5 .inner ul.tab li a{
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #666;
+  font-size: 16px;
+  border: 2px solid #e1e1e1;
+  border-bottom: none;
+}
+/* 선택된 on Class */
+main #section5 .inner ul.tab li.on a{
+  border: 2px solid #555;
+  border-bottom: none;
+  /* 제자리에서 공중에 띄어서 배치하기 */
+  position: relative;
+  height: 54px;
+  background: #f1f1f1;
+  font-weight: bold;
+  /* 클릭시 아랫선 숨김처리 */
+  top: 1px;
+  z-index: 1;
+}
